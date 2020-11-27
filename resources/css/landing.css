@@ -1,0 +1,68 @@
+
+.arrowFromLeft {
+    overflow: hidden;
+    padding: 8px 25px;
+    border-radius: 6px;
+    border:2px #efb697 solid;
+    position: relative;
+}
+
+.arrowFromLeft div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrowFromLeft:hover span {
+    transform: translateX(15px);
+}
+
+.arrowFromLeft:hover svg {
+    opacity: 1;
+    transform: translate(15px, -50%);
+}
+
+.arrowFromLeft span {
+    display: inline-block;
+    transition: transform .3s cubic-bezier(.455,.03,.515,.955);
+}
+
+.arrowFromLeft svg {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    fill: hsl(29, 67%, 68%);
+    opacity: 0;
+    transform: translate(-10px, -50%);
+    transition: opacity .3s .05s cubic-bezier(.455,.03,.515,.955), transform .3s .05s cubic-bezier(.455,.03,.515,.955);
+}
+
+.apartment-category .category{
+    background: linear-gradient(141deg, #a5f9ff 40%, #9dffd9 100%);
+}
+.land-category .category{
+    background: linear-gradient(141deg, #fce9ed 40%, #ffe2cf 100%);
+}
+.chalet-category .category{
+    background: linear-gradient(141deg, #f2f2fb 40%, #6b7fff3b 100%);
+}
+.category {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    cursor: pointer;
+    box-sizing: content-box;
+    padding: 0.1rem 0.3rem;
+    border-radius: 8px;
+    display: inline-flex;
+    /* max-width: rem; */
+  }
+
+  .category h6 {
+    font-weight: 300;
+    letter-spacing: 1.4px;
+    color: #2f292b;
+    padding: 0;
+    margin: 3px 4px !important;
+  }
