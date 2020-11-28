@@ -9,7 +9,7 @@
 @endsection
 
 @section('content')
-<section class="h-screen hero_section">
+<section class="h-screen bg-center bg-no-repeat bg-cover hero_section">
     <div class="container flex items-center px-8 pt-32 mx-auto lg:px-16 lg:pb-12">
         <div class="w-full lg:w-3/5 ">
             <div class="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
@@ -317,11 +317,10 @@
 
 </script>
 @endsection
-<style scoped>
-    /* .hero_section
+{{-- <style scoped>
+    .hero_section
 {
     background-image: url("http://localhost/our-beautiful-project/resources/img/hero-section-bg.jpg")
+}
 
-} */
-
-</style>
+</style> --}}
