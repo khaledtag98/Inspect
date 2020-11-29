@@ -21,7 +21,7 @@
                 </div>
                 <div class="tab-slider--container">
                     <div id="tab1" class="tab-slider--body">
-                        <form class="block my-8">
+                        <form class="block -my-12">
                             <label>Email </label>
                             <input class="w-full px-2 py-1 mt-2 mb-4 border-2 border-gray-600" type="email" name="" placeholder="" aria-describedby="helpId">
                             <label>Password </label>
@@ -34,7 +34,7 @@
                         </form>
                     </div>
                     <div id="tab2" class="tab-slider--body">
-                        <form class="block my-8">
+                        <form class="block -my-12">
                             <label>Full Name </label>
                             <div class='flex'>
                                 <input class='w-3/4 px-1 px-2 py-1 mt-2 mb-4 mr-4 border-2 border-gray-600' type="text" placeholder="First Name">
