@@ -1,6 +1,6 @@
 @extends('layout.layout')
 
-@section('title', 'Real-Estate')
+@section('title', 'Inspect')
 
 @section('customCSS')
 <link rel="stylesheet" href="http://localhost/our-beautiful-project/resources/css/landing.css">

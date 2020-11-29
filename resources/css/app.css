@@ -79,3 +79,10 @@ video {
     background-color: #efb6971f;
     width:fit-content;
 }
+.bg-button1{
+    background-color: #3f3d56;
+    color:white;
+}
+.bg-button1:hover, .bg-button1:active{
+    background-color: #262546;
+}
