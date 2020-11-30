@@ -13,8 +13,8 @@
             <div class='flex'>
             </div>
             <div class="container">
-                <div class="tab-slider--nav">
-                    <ul class="tab-slider--tabs">
+                <div class="flex justify-center tab-slider--nav">
+                    <ul class=" tab-slider--tabs">
                         <li class="tab-slider--trigger active" rel="tab1">Sign In</li>
                         <li class="tab-slider--trigger" rel="tab2">Register</li>
                     </ul>
@@ -37,8 +37,8 @@
                         <form class="block -my-12">
                             <label>Full Name </label>
                             <div class='flex'>
-                                <input class='w-3/4 px-1 px-2 py-1 mt-2 mb-4 mr-4 border-2 border-gray-600' type="text" placeholder="First Name">
-                                <input class='w-3/4 px-1 px-2 py-1 mt-2 mb-4 border-2 border-gray-600' type="text" placeholder="Last Name">
+                                <input class='w-3/4 px-2 py-1 mt-2 mb-4 mr-4 border-2 border-gray-600' type="text" placeholder="First Name">
+                                <input class='w-3/4 px-2 py-1 mt-2 mb-4 border-2 border-gray-600' type="text" placeholder="Last Name">
                             </div>
                             <label>Email</label>
                             <input class="w-full px-2 py-1 mt-1 mb-4 border-2 border-gray-600" type="email" name="" placeholder="" aria-describedby="helpId">
@@ -55,12 +55,12 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
         <div class="w-1/2 ml-10">
             <img src="http://localhost/our-beautiful-project/resources/img/undraw_authentication_fsn5.svg" alt="">
         </div>
-    
+
     </div>
 </div>
 @endsection

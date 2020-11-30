@@ -1,88 +1,45 @@
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
 }
 body {
     margin: 0;
     background-color: #f8f8fa;
 }
-a {
-    background-color: transparent;
-}
-[hidden] {
-    display: none;
-}
-html {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-        Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
-        Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-    line-height: 1.5;
-}
-*,
-:after,
-:before {
-    box-sizing: border-box;
-    border: 0 solid #e2e8f0;
-}
-a {
-    color: inherit;
-    text-decoration: inherit;
-}
-svg,
-video {
-    display: block;
-    vertical-align: middle;
-}
-video {
-    max-width: 100%;
-    height: auto;
-}
 
-/* nav bar */
-
-* {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
-}
-
-.fade-enter-active,
-.fade-leave-active {
-    @apply duration-200 ease-in-out;
-}
-.fade-enter,
-.fade-leave-to {
-    @apply scale-95 opacity-0;
-}
-.fade-enter-to,
-.fade-leave {
-    @apply scale-100 opacity-100;
-}
 .bg-primary-color {
     background-color: #efb697;
     transition: all 0.2s ease-in-out;
 }
+
 .bg-primary-color:hover {
     transition: all 0.2s ease-in-out;
     background-color: #f0a882;
 }
 
 .border-primary-color {
-    border:2px #efb697 solid;
+    border: 2px #efb697 solid;
     transition: all 0.2s ease-in-out;
 }
-.border-primary-color:hover{
+
+.border-primary-color:hover {
     transition: all 0.2s ease-in-out;
     color: #ffffff;
     background-color: #f0a882;
 }
-.Badge-primary-color{
+
+.Badge-primary-color {
     background-color: #efb6971f;
-    width:fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
 }
-.bg-button1{
+
+.bg-button1 {
     background-color: #3f3d56;
-    color:white;
+    color: white;
 }
-.bg-button1:hover, .bg-button1:active{
+
+.bg-button1:hover,
+.bg-button1:active {
     background-color: #262546;
 }

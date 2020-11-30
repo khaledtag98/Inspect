@@ -7,26 +7,26 @@
     </div>
     <nav class="main-nav">
       <div class="start-nav">
-        <a class="navbar-brand" href="index.html">Real-Estate</a>
+        <a class="navbar-brand" href="{{url('/')}}">Real-Estate</a>
       </div>
       <div class="mid-nav">
         <ul>
           <li class="has-dropdown links" data-content="categories">
-            <a href="#0">Categories</a>
+            <a href="{{url('')}}">Categories</a>
           </li>
 
           <li class="has-dropdown links" data-content="pricing">
-            <a href="#0">Pricing</a>
+            <a href="{{url('')}}">Pricing</a>
           </li>
 
           <li class="has-dropdown button" data-content="contact">
-            <a href="#0">Contact</a>
+            <a href="{{url('')}}">Contact</a>
           </li>
         </ul>
       </div>
       <div class="end-nav">
         <div class="seperator"></div>
-        <a href="signin.html">Sign in</a>
+        <a href="{{url('sign-in')}}">Sign in</a>
       </div>
     </nav>
 
