@@ -2,12 +2,12 @@
     <div class="responive-mobile-navbar">
       <a href="#0" class="nav-trigger">Open Nav<span aria-hidden="true"></span></a>
       <div class="start-nav">
-        <a class="navbar-brand" href="index.html">Real-Estate</a>
+        <a class="navbar-brand" href="index.html">Inspect</a>
       </div>
     </div>
     <nav class="main-nav">
       <div class="start-nav">
-        <a class="navbar-brand" href="{{url('/')}}">Real-Estate</a>
+        <a class="navbar-brand" href="{{url('/')}}">Inspect</a>
       </div>
       <div class="mid-nav">
         <ul>
@@ -26,7 +26,7 @@
       </div>
       <div class="end-nav">
         <div class="seperator"></div>
-        <a href="{{url('sign-in')}}">Sign in</a>
+        <a href="{{url('sign-in')}}">Sign In</a>
       </div>
     </nav>
 

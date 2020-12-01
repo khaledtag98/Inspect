@@ -131,7 +131,9 @@
                         <p class="mb-3 leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings
                             jianbing microdosing tousled waistcoat.</p>
                         <div class="flex flex-wrap items-center ">
-                            <a class="inline-flex items-center text-indigo-500 md:mb-2 lg:mb-0">Learn More
+                            <a class="inline-flex items-center text-indigo-500 cursor-pointer md:mb-2 lg:mb-0 modal-open">Learn More
+                                <x-modal/>
+                                @yield('modal')    
                                 <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
                                     fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M5 12h14"></path>
@@ -170,7 +172,9 @@
                         <p class="mb-3 leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings
                             jianbing microdosing tousled waistcoat.</p>
                         <div class="flex flex-wrap items-center">
-                            <a class="inline-flex items-center text-indigo-500 md:mb-2 lg:mb-0">Learn More
+                            <a class="inline-flex items-center text-indigo-500 cursor-pointer md:mb-2 modal-open lg:mb-0">Learn More
+                                <x-modal/>
+                                @yield('modal')
                                 <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
                                     fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M5 12h14"></path>
@@ -209,7 +213,9 @@
                         <p class="mb-3 leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings
                             jianbing microdosing tousled waistcoat.</p>
                         <div class="flex flex-wrap items-center ">
-                            <a class="inline-flex items-center text-indigo-500 md:mb-2 lg:mb-0">Learn More
+                            <a class="inline-flex items-center text-indigo-500 cursor-pointer md:mb-2 lg:mb-0 modal-open">Learn More
+                                <x-modal/>
+                                 @yield('modal')
                                 <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
                                     fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M5 12h14"></path>
@@ -248,7 +254,9 @@
                         <p class="mb-3 leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings
                             jianbing microdosing tousled waistcoat.</p>
                         <div class="flex flex-wrap items-center ">
-                            <a class="inline-flex items-center text-indigo-500 md:mb-2 lg:mb-0">Learn More
+                            <a class="inline-flex items-center text-indigo-500 cursor-pointer md:mb-2 lg:mb-0 modal-open">Learn More
+                                <x-modal/>
+                                    @yield('modal')
                                 <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
                                     fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M5 12h14"></path>
@@ -287,7 +295,9 @@
                         <p class="mb-3 leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings
                             jianbing microdosing tousled waistcoat.</p>
                         <div class="flex flex-wrap items-center ">
-                            <a class="inline-flex items-center text-indigo-500 md:mb-2 lg:mb-0">Learn More
+                            <a class="inline-flex items-center text-indigo-500 cursor-pointer md:mb-2 lg:mb-0 modal-open">Learn More
+                                <x-modal/>
+                                @yield('content')
                                 <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
                                     fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M5 12h14"></path>
@@ -339,7 +349,8 @@
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="http://localhost/our-beautiful-project/resources/js/carousel.js"></script>
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-<script>
+<script src="http://localhost/our-beautiful-project/resources/js/modal.js"></script>
+<script
 var elem = document.querySelector('.grid');
 var msnry = new Masonry( elem, {
   itemSelector: '.grid-item',

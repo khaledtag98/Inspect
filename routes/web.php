@@ -32,3 +32,6 @@ Route::get('/profile', function () {
 Route::get('/sign-in', function () {
     return view('sign-in');
 });
+Route::get('/modal', function () {
+    return view('components.modal');
+});
