@@ -36,7 +36,7 @@
         <!--Footer-->
         <div class="flex justify-end pt-2">
           <button class="p-3 px-4 mr-2 text-indigo-500 bg-transparent rounded-lg hover:bg-gray-100 hover:text-indigo-400 modal-close">Active</button>
-          <button class="p-3 px-4 text-white bg-indigo-500 rounded-lg hover:bg-indigo-400">Close</button>
+          <button class="p-3 px-4 text-white bg-indigo-500 rounded-lg hover:bg-indigo-400 ">Close</button>
         </div>
         
       </div>
