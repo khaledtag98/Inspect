@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="http://localhost/our-beautiful-project/resources/css/app.css">
     <link rel="stylesheet" href="http://localhost/our-beautiful-project/resources/css/NavBar.css">
     <link rel="stylesheet" href="http://localhost/our-beautiful-project/resources/css/footer.css">
+    <script src="https://kit.fontawesome.com/b03fb49129.js" crossorigin="anonymous"></script>
     {{-- custom CSS --}}
     @yield('customCSS')
 </head>

@@ -1,0 +1,123 @@
+.magnifyBtn {
+    padding: 6px 20px;
+    background-color: hsl(225, 57%, 97%);
+    border-radius: 6px;
+    transition: transform 250ms ease-in-out;
+}
+
+.magnifyBtn:active {
+    transform: scale(.9);
+}
+
+.social i {
+    transition: transform 250ms ease-in-out;
+
+}
+
+.social i:active {
+    transform: scale(.9);
+}
+
+/* form */
+
+label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c3e50;
+    transition: color 0.3s ease-in-out;
+}
+
+.w-mine {
+    min-width: 350px;
+}
+
+
+
+input {
+    outline: none;
+    height: 2rem;
+}
+
+.content {
+    position: relative;
+    margin-top: 2rem;
+}
+
+.content::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.12);
+    outline: none;
+}
+
+.content::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: #31a8ff;
+    outline: none;
+    transform-origin: center;
+    transform: scale(0);
+    transition: all 0.2s ease-in;
+}
+
+.content:focus-within::before {
+    transform: scale(1);
+}
+
+.content:focus-within .icon-color,
+.content:focus-within label {
+    color: #31a8ff;
+    transition: color 0.3s ease-in-out;
+}
+
+textarea {
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+    transform: scale(0.985);
+    border: rgba(0, 0, 0, 0.12) solid 1.5px;
+    border-radius: 5px;
+}
+
+textarea:focus {
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+    transform: scale(1);
+    border: #31a8ff solid 1.5px;
+}
+
+textarea:focus+small {
+    color: #31a8ff;
+}
+
+.textarea-container:focus-within #tell,
+.textarea-container:focus-within .icon-color {
+    color: #31a8ff;
+}
+
+.icon-color {
+    color: #2c3e50;
+    transition: color 0.3s ease-in-out;
+}
+.edit-photo{
+    top: 10px;
+    right: 5px;
+    transition: transform 250ms ease-in-out;
+}
+.edit-photo:active{
+    transform: scale(.9);
+}
+.separator
+{
+    width: 1px;
+}
+.position-mine{
+    top: 6px;
+    left: 20px;
+}
