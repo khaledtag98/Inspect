@@ -36,12 +36,18 @@ body {
 
 .bg-button1 {
     background-color: #3f3d56;
+    font-size: 18px;
     color: white;
 }
 
 .bg-button1:hover,
 .bg-button1:active {
     background-color: #262546;
+}
+.bg-button2{
+    background: white;
+    font-size: 18px;
+    color: black;
 }
 .slick-prev:before, .slick-next:before{
     color: black !important;

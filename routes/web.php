@@ -32,4 +32,6 @@ Route::get('/profile', function () {
 Route::get('/sign-in', function () {
     return view('sign-in');
 });
-
+Route::get('/all-projects', function () {
+    return view('all-projects');
+});

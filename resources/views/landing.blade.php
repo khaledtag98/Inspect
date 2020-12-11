@@ -30,13 +30,11 @@
                         <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                             <div>
                                 <a href="#collections"
-                                    class="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out border border-transparent shadow bg-primary-color btn hover-no-underline focus:outline-none focus:shadow-outline-indigo md:py-4 md:text-lg md:px-10">Explore
-                                    now</a>
+                                    class="px-12 py-3 mt-6 mr-5 rounded-sm shadow-md bg-button1">Explore now</a>
                             </div>
-                            <div class="mt-3 sm:mt-0 sm:ml-3">
+                            <div class="mt-6 sm:mt-0 sm:ml-3">
                                 <a href="#"
-                                    class="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-gray-700 transition duration-150 ease-in-out border border-transparent border-primary-color btn hover-no-underline focus:outline-none focus:shadow-outline-indigo md:py-4 md:text-lg md:px-10">Find
-                                    the best for you</a>
+                                    class="px-12 py-3 mt-6 rounded-sm shadow-md bg-button2">Find what suits you</a>
                             </div>
                         </div>
                     </div>
