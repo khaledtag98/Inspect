@@ -43,3 +43,9 @@ body {
 .bg-button1:active {
     background-color: #262546;
 }
+.slick-prev:before, .slick-next:before{
+    color: black !important;
+}
+.slick-next{
+    right: 57px !important;
+}

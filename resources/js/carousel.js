@@ -51,3 +51,10 @@ $('.Categories').slick({
         },
     ]
 });
+$('.learn-more').slick({
+    arrows: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear'
+  });
