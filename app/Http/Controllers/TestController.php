@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Address;
 use App\Models\User;
 use App\Models\Company;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
 class TestController extends Controller
@@ -32,5 +33,10 @@ class TestController extends Controller
         // $Company->addresses[6]->delete();
         // dd($Company->addresses);
         return view('landing');
+    }
+    public function isCompany(){
+        if(Auth::user()->company)
+            return view('company-dashboard');
+        return view('dashboard');
     }
 }

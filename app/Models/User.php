@@ -20,8 +20,8 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'picture'
     ];
-
     /**
      * The attributes that should be hidden for arrays.
      *
@@ -42,11 +42,10 @@ class User extends Authenticatable
     ];
 
 
-    public function companies(){
-        return $this->hasOne(Company::class);
+    public function company(){
+        return $this->hasOne('App\Models\Company'); //ONE TO ONE between company and User
     }
-
-
-
-
+    public function saved_estates(){
+        return $this->hasMany(SavedEstate::class);
+    }
 }

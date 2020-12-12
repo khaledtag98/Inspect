@@ -19,7 +19,8 @@
 </head>
 
 <body>
-    <x-Navbar />
+@include('layouts.navigation')
+
     @yield('content')
     <x-Footer />
     {{-- main JS --}}
@@ -29,6 +30,7 @@
     <script src="http://localhost/our-beautiful-project/resources/js/NavBar/NavBar.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="http://localhost/our-beautiful-project/resources/js/AOS.js"></script>
+    <script src="{{ asset('js/app.js') }}" defer></script>
     {{-- Custom JS --}}
     @yield('customJS')
 </body>

@@ -6,15 +6,17 @@ var openmodal = document.querySelectorAll('.modal-open')
     	toggleModal()
       })
     }
-    
+
     const overlay = document.querySelector('.modal-overlay')
     overlay.addEventListener('click', toggleModal)
-    
+
     var closemodal = document.querySelectorAll('.modal-close')
+    console.log(closemodal)
     for (var i = 0; i < closemodal.length; i++) {
       closemodal[i].addEventListener('click', toggleModal)
     }
-    
+
+
     document.onkeydown = function(evt) {
       evt = evt || window.event
       var isEscape = false
@@ -27,8 +29,8 @@ var openmodal = document.querySelectorAll('.modal-open')
     	toggleModal()
       }
     };
-    
-    
+
+
     function toggleModal () {
       const body = document.querySelector('body')
       const modal = document.querySelector('.modal')

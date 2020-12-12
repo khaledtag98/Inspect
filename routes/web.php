@@ -1,22 +1,28 @@
 <?php
 
-use App\Http\Controllers\TestController;
-use App\Models\Company;
-use App\Models\User;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Hash;
+use \App\Http\Controllers\projectController;
+use \App\Http\Controllers\companyCheckController;
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
 
+Route::get('/', function () {
+    return view('landing');
+})->name('home');
 
-Route::get('/', [TestController::class, 'hambozo']);
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware('auth');
 Route::get('/profile', function () {
     return view('profile');
-});
+})->name('profile');
 Route::get('/sign-in', function () {
-    return view('sign-in');
-});
-Route::get('/edit-profile', function () {
-    return view('edit-profile');
-});
+    return view('sign-in');})->middleware('guest')->name('sign-in');
+Route::get('/dashboard',[companyCheckController::class, 'isCompany'])->middleware(['auth'])->name('dashboard');
+Route::post('/create-new-project', [projectController::class, 'store']);
+require __DIR__.'/auth.php';

@@ -1,3 +1,4 @@
+
 @extends('layout.layout')
 
 @section('title', 'Sign In')
@@ -21,35 +22,105 @@
                 </div>
                 <div class="tab-slider--container">
                     <div id="tab1" class="tab-slider--body">
-                        <form class="block -my-12">
-                            <label>Email </label>
-                            <input class="w-full px-2 py-2 mt-2 mb-4 rounded-sm shadow-md" type="email" name="" placeholder="" aria-describedby="helpId">
-                            <label>Password </label>
-                            <input class="w-full px-2 py-2 mt-2 rounded-sm shadow-md" type="password" name="" placeholder="" aria-describedby="helpId">
+                        <!-- Session Status -->
+                        <x-auth-session-status class="mb-4" :status="session('status')" />
+
+                        <!-- Validation Errors -->
+                        <x-auth-validation-errors class="mb-4" :errors="$errors" />
+                        {{--login form--}}
+                        <form method="POST" action="{{ route('login') }}">
+                        @csrf
+
+                        <!-- Email Address -->
                             <div>
-                                <a href=""
-                                    class="flex items-center justify-center w-1/2 px-8 py-3 m-auto mt-12 text-base font-medium leading-6 text-white transition duration-150 ease-in-out border border-transparent shadow bg-button1 btn hover-no-underline focus:outline-none focus:shadow-outline-indigo md:py-4 md:text-lg md:px-10">
-                                    Sign In</a>
+                                <x-label for="email" :value="__('Email')" />
+
+                                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus />
+                            </div>
+
+                            <!-- Password -->
+                            <div class="mt-4">
+                                <x-label for="password" :value="__('Password')" />
+
+                                <x-input id="password" class="block mt-1 w-full"
+                                         type="password"
+                                         name="password"
+                                         required autocomplete="current-password" />
+                            </div>
+
+                            <!-- Remember Me -->
+                            <div class="block mt-4">
+                                <label for="remember_me" class="inline-flex items-center">
+                                    <input id="remember_me" type="checkbox" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" name="remember">
+                                    <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
+                                </label>
+                            </div>
+
+                            <div class="flex items-center justify-end mt-4">
+{{--                                <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('register') }}">--}}
+{{--                                    {{ __('create account') }}--}}
+{{--                                </a>--}}
+                                <x-button class="ml-3">
+                                    {{ __('Login') }}
+                                </x-button>
                             </div>
                         </form>
                     </div>
                     <div id="tab2" class="tab-slider--body">
-                        <form class="block -my-12">
-                            <label>Full Name </label>
-                            <div class='flex'>
-                                <input class='w-1/2 px-2 py-2 mt-2 mb-4 mr-1 rounded-sm shadow-md' type="text" placeholder="First Name">
-                                <input class='w-1/2 px-2 py-2 mt-2 mb-4 rounded-sm shadow-md' type="text" placeholder="Last Name">
-                            </div>
-                            <label>Email</label>
-                            <input class="w-full px-2 py-2 mt-1 mb-4 rounded-sm shadow-md" type="email" name="" placeholder="" aria-describedby="helpId">
-                            <label>Password </label>
-                            <input class="w-full px-2 py-2 mt-1 mb-4 rounded-sm shadow-md" type="password" name="" placeholder="" aria-describedby="helpId">
-                            <label>Confirm Password </label>
-                            <input class="w-full px-2 py-2 mt-1 rounded-sm shadow-md" type="password" name="" placeholder="" aria-describedby="helpId">
+                        <!-- Validation Errors -->
+                        <x-auth-validation-errors class="mb-4" :errors="$errors" />
+
+                        <form method="POST" action="{{ route('register') }}">
+                        @csrf
+
+                        <!-- Name -->
                             <div>
-                                <a href=""
-                                    class="flex items-center justify-center w-1/2 px-8 py-3 m-auto mt-12 text-base font-medium leading-6 text-white transition duration-150 ease-in-out border border-transparent shadow bg-button1 btn hover-no-underline focus:outline-none focus:shadow-outline-indigo md:py-4 md:text-lg md:px-10">
-                                    Register</a>
+                                <x-label for="name" :value="__('Name')" />
+
+                                <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
+                            </div>
+
+                            <!-- Email Address -->
+                            <div class="mt-4">
+                                <x-label for="email" :value="__('Email')" />
+
+                                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
+                            </div>
+
+                            <!-- Password -->
+                            <div class="mt-4">
+                                <x-label for="password" :value="__('Password')" />
+
+                                <x-input id="password" class="block mt-1 w-full"
+                                         type="password"
+                                         name="password"
+                                         required autocomplete="new-password" />
+                            </div>
+
+                            <!-- Confirm Password -->
+                            <div class="mt-4">
+                                <x-label for="password_confirmation" :value="__('Confirm Password')" />
+
+                                <x-input id="password_confirmation" class="block mt-1 w-full"
+                                         type="password"
+                                         name="password_confirmation" required />
+                            </div>
+
+                            <div class="mt-4">
+                                <input class="border" id="isCompany"
+                                       type="checkbox"
+                                       name="isCompany" />
+                                <label for="isCompany">Are you a company?</label>
+                            </div>
+
+                            <div class="flex items-center justify-end mt-4">
+{{--                                <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">--}}
+{{--                                    {{ __('Already registered?') }}--}}
+{{--                                </a>--}}
+
+                                <x-button class="ml-4">
+                                    {{ __('Register') }}
+                                </x-button>
                             </div>
                         </form>
                     </div>
