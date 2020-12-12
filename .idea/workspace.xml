@@ -2,42 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35b58067-bb1f-4879-a2cd-262684e45e20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Models/CompanyPhone.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/EstatePhoto.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Project.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/SavedEstate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/SocialMedia.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/estate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_04_155333_create_companies_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_04_171714_create_social_media_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_04_174436_create_company_phones_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_04_175656_create_projects_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_04_180600_create_estates_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_04_183113_create_estate_photos_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_04_185757_create_saved_estates_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/our-beautiful-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/our-beautiful-project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/all-projects.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TestController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Company.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Company.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/NavBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/NavBar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/modal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/carousel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/modal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/components/modal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/modal.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/navbar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/landing.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/landing.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layout/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/sign-in.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sign-in.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +173,7 @@
       <updated>1607634716105</updated>
       <workItem from="1607634718156" duration="5511000" />
       <workItem from="1607704753945" duration="20215000" />
-      <workItem from="1607787921804" duration="12263000" />
+      <workItem from="1607787921804" duration="13765000" />
     </task>
     <servers />
   </component>

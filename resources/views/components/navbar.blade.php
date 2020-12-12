@@ -15,11 +15,11 @@
             <a href="{{url('')}}">Categories</a>
           </li>
 
-          <li class="has-dropdown links" data-content="pricing">
-            <a href="{{url('')}}">Pricing</a>
+          <li class="links" data-content="pricing">
+            <a href="{{url('all-projects')}}">Available Projects</a>
           </li>
 
-          <li class="has-dropdown button" data-content="contact">
+          <li class="button" data-content="contact">
             <a href="{{url('')}}">Contact</a>
           </li>
         </ul>

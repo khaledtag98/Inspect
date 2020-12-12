@@ -14,15 +14,14 @@ use \App\Http\Controllers\companyCheckController;
 |
 */
 
-Route::get('/', function () {
-    return view('landing');
-})->name('home');
-
-Route::get('/profile', function () {
-    return view('profile');
-})->name('profile');
-Route::get('/sign-in', function () {
-    return view('sign-in');})->middleware('guest')->name('sign-in');
+Route::get('/', function () {return view('landing');})->name('home');
+Route::get('/profile', function () {return view('profile');})->name('profile');
+Route::get('/all-projects', function () {return view('all-projects');});
+Route::get('/sign-in', function () {return view('sign-in');})->middleware('guest')->name('sign-in');
 Route::get('/dashboard',[companyCheckController::class, 'isCompany'])->middleware(['auth'])->name('dashboard');
 Route::post('/create-new-project', [projectController::class, 'store']);
+
 require __DIR__.'/auth.php';
+
+
+
