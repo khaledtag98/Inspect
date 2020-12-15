@@ -171,7 +171,7 @@
                         <div class="flex flex-wrap items-center">
                             <a class="inline-flex items-center text-indigo-500 cursor-pointer md:mb-2 modal-open lg:mb-0">Learn More
                                 <x-modal/>
-
+                                @yield('modal')
                                 <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
                                     fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M5 12h14"></path>
@@ -203,11 +203,7 @@
     </div>
 </section>
 <section>
-    <div class="container px-8 mx-auto lg:px-16">
-    <div class="projects">
-        <h2 class="mb-8 text-4xl font-semibold text-indigo-900">Projects</h2>
-    </div>
-</div>
+    
 </section>
 @endsection
 @section('customJS')

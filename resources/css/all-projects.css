@@ -1,0 +1,38 @@
+.pro:hover img{
+    filter: blur(5px);
+}
+.cont {
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Make the image responsive */
+  .cont img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Style the button and place it in the middle of the container/image */
+  .cont .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color:white;
+    background-color: #3f3d56;
+    font-size: 18px;
+    box-shadow: 20px;
+    padding: 12px 24px;
+    opacity: 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .pro:hover .btn{
+      opacity:100;
+  }
+  
+  .cont .btn:hover, .cont .btn:active {
+    background-color: #262546;
+  }

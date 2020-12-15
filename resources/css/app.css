@@ -49,9 +49,9 @@ body {
     font-size: 18px;
     color: black;
 }
-.slick-prev:before, .slick-next:before{
-    color: black !important;
+.bg-button2:hover{
+    background-color: rgb(233, 224, 224);
 }
-.slick-next{
-    right: 57px !important;
+.slick-prev:before, .slick-next:before{
+    color: #3f3d56 !important;
 }

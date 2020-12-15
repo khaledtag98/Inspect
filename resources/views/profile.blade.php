@@ -1,6 +1,6 @@
 @extends('layout.layout')
 
-@section('title', 'profile')
+@section('title', 'Inspect | Profile')
 
 @section('customCSS')
 <link rel="stylesheet" href="http://localhost/our-beautiful-project/resources/css/profile.css">

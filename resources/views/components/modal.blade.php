@@ -11,21 +11,21 @@
             </div>
 
             <!-- Add margin if you want to see grey behind the modal-->
-            <div class="container h-auto p-4 mx-auto text-left modal-content">
+            <div class="container h-auto p-4 mx-auto text-left bg-fixed modal-content">
 
                 <div class='flex w-full my-16 modal-close'>
-                    <div class='w-2/3 learn-more'>
-                        <div>
+                    <div class='flex flex-wrap w-2/3 overflow-y-auto'>
+                        <div class='w-full mx-2 my-2'>
                             <img  src='http://localhost/our-beautiful-project/resources/img/house-1.jpg'>
                         </div>
-                        <div>
+                        <div class='w-1/3 mx-2 my-2'>
                             <img  src='http://localhost/our-beautiful-project/resources/img/house-2.jpg'>
                         </div>
-                        <div>
+                        <div class='w-1/3 mx-2 my-2'>
                             <img  src='http://localhost/our-beautiful-project/resources/img/house-3.jpg'>
                         </div>
                     </div>
-                    <div class='w-1/3 my-5 text-black '>
+                    <div class='w-1/3 my-5 text-black'>
                         <h1 class='text-3xl font-bold'>The Catalyzer - $250,000</h1>
                         <div class="category">
                             <h2 class="mb-1 text-sm font-medium tracking-widest title-font">Chalet</h2>
@@ -37,7 +37,7 @@
                             Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.
                             Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.
                         </p>
-                        <button href="#" class='px-12 py-3 my-10 bg-button1'>Take a tour</button>
+                        <button href="#" class='px-12 py-3 my-10 bg-button1'>Book a tour</button>
 
                     </div>
                 </div>
