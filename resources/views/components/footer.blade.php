@@ -4,7 +4,7 @@
             class="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
             <div class="flex-shrink-0 w-64 mx-auto mt-10 text-center md:mx-0 md:text-left md:mt-0">
                 <a class="flex items-center justify-center font-medium text-gray-900 title-font md:justify-start">
-                    <span class="ml-3 text-xl">Real-Estate</span>
+                    <span class="ml-3 text-xl">Inspect</span>
                 </a>
                 <p class="mt-2 text-sm text-gray-500">Air plant banjo lyft occupy retro adaptogen indego</p>
             </div>
@@ -81,7 +81,7 @@
         </div>
         <div class="bg-gray-300">
             <div class="container flex flex-col flex-wrap px-5 py-4 mx-auto sm:flex-row">
-                <p class="text-sm text-center text-gray-500 sm:text-left">© 2020 Real-Estate
+                <p class="text-sm text-center text-gray-500 sm:text-left">© 2020 Inspect
                 </p>
                 <span class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
                     <a class="text-gray-600 transition-colors duration-200 ease-in-out opacity-50 hover:text-orange-600">
