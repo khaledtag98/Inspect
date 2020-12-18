@@ -11,9 +11,26 @@ class modal extends Component
      *
      * @return void
      */
-    public function __construct()
+    public $key;
+    public $name;
+    public $type;
+    public $price;
+    public $description;
+    public $block;
+    public $floor;
+    public $available;
+    public function __construct($key,$name,$type,$price,$description,$block,$floor,$available)
     {
-        //
+        $this->key = $key;
+        $this->name = $name;
+        $this->type = $type;
+        $this->price = $price;
+        $this->description = $description;
+        $this->block = $block;
+        $this->floor = $floor;
+        $this->available = $available;
+
+
     }
 
     /**

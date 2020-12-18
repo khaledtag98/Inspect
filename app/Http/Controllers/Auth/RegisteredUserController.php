@@ -34,7 +34,7 @@ class RegisteredUserController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'name' => 'required|string|max:255',
+            'name' => 'required|string|max:255|unique:companies',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|confirmed|min:8',
         ]);
@@ -46,7 +46,7 @@ class RegisteredUserController extends Controller
         ]));
 
         if(isset($request->isCompany)){
-            Company::create(['user_id' => $user->id]);
+            Company::create(['user_id' => $user->id, 'name'=> $request->name]);
         }
 
         event(new Registered($user));

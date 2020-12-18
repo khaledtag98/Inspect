@@ -23,5 +23,11 @@ class projectController extends Controller
             'address' => $request->address,
         ]);
     }
+    public function show($company_id,$project_id){
+//        $company =  DB::select("$company_id");
+        $project = Project::find($project_id);
+        return view('project-profile', ['project' => $project]);
+
+    }
 
 }

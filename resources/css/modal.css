@@ -6,3 +6,8 @@ body.modal-active {
     overflow-y: visible !important;
 }
 .opacity-95 {opacity: .95;}
+
+.zxczxc::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}

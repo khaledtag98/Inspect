@@ -49,9 +49,18 @@ body {
     font-size: 18px;
     color: black;
 }
-.slick-prev:before, .slick-next:before{
+
+.slick-prev:before, .slick-next:before {
     color: #a0aec0 !important;
 }
+
+.bg-button2:hover{
+    background-color: rgb(233, 224, 224);
+}
+/*.slick-prev:before, .slick-next:before{*/
+/*    color: #3f3d56 !important;*/
+/*}*/
 /*.slick-next{*/
 /*    right: 57px !important;*/
 /*}*/
+

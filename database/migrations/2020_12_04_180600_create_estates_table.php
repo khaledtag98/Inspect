@@ -19,7 +19,7 @@ class CreateEstatesTable extends Migration
             $table->string('name');
             $table->string('type');
             $table->string('price');
-            $table->string('description');
+            $table->text('description');
             $table->string('block');
             $table->string('floor');
             $table->boolean('available');

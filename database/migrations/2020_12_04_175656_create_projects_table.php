@@ -17,8 +17,8 @@ class CreateProjectsTable extends Migration
             $table->id();
             $table->foreignId('company_id');
             $table->string('name');
-            $table->string('description');
-            $table->string('address');
+            $table->text('description');
+            $table->text('address');
             $table->timestamps();
         });
     }
