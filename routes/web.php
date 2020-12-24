@@ -26,6 +26,7 @@ Route::get('/all-companies',
         return view('all-companies' , ['companies' => $companies]);
     })->name('companies');
 
+
 Route::get('/sign-in', function () {return view('sign-in');})->middleware('guest')->name('sign-in');
 Route::get('/dashboard',[companyCheckController::class, 'isCompany'])->middleware(['auth'])->name('dashboard');
 Route::post('/create-new-project', [projectController::class, 'store']);

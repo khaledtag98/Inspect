@@ -2,47 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35b58067-bb1f-4879-a2cd-262684e45e20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/CompanyController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/EstateController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/CompanyFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeders/CompanySeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeders/EstateSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeders/ProjectSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/css/all-projects.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/img/companies-logo/1596439.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/img/companies-logo/4aqaar-realestate.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/img/companies-logo/amlak.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/img/companies-logo/halic-property.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/img/icons8-facebook.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/img/icons8-linkedin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/img/icons8-twitter.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/all-companies.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/company-profile.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/project-profile.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisteredUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisteredUserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/projectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/projectController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Project.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/estate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/estate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/View/Components/modal.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/View/Components/modal.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_04_155333_create_companies_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_04_155333_create_companies_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_04_175656_create_projects_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_04_175656_create_projects_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_04_180600_create_estates_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_04_180600_create_estates_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/modal.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/modal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/all-projects.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/all-projects.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/company-dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/company-dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/modal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/modal.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/edit-profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/edit-profile.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/landing.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/landing.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/navigation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/navigation.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/sign-in.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sign-in.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/companyCheckController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/companyCheckController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,6 +28,7 @@
     <setting file="file://$PROJECT_DIR$/resources/views/project-profile.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/View/Components/modal.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" root2="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/database/seeders/CompanySeeder.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/Http/Controllers/projectController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/resources/views/all-projects.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/resources/js/sign-in.js" root0="SKIP_INSPECTION" />
@@ -217,7 +180,9 @@
       <workItem from="1607704753945" duration="20215000" />
       <workItem from="1607787921804" duration="19134000" />
       <workItem from="1608054854681" duration="16867000" />
-      <workItem from="1608091729723" duration="24347000" />
+      <workItem from="1608091729723" duration="31917000" />
+      <workItem from="1608498975704" duration="8000" />
+      <workItem from="1608779634999" duration="360000" />
     </task>
     <servers />
   </component>
@@ -272,7 +237,7 @@
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/routes/auth.php</url>
           <line>2</line>
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -14,15 +14,13 @@ use Illuminate\Support\Facades\Route;
 //                ->middleware('guest')
 //                ->name('register');
 
-Route::post('/register', [RegisteredUserController::class, 'store'])
-                ->middleware('guest')->name('register');
+
 
 //Route::get('/login', [AuthenticatedSessionController::class, 'create'])
 //                ->middleware('guest')
 //                ->name('login');
-
-Route::post('/login', [AuthenticatedSessionController::class, 'store'])
-                ->middleware('guest')->name('login');
+Route::post('/register', [RegisteredUserController::class, 'store'])->name('register');
+Route::post('/login', [AuthenticatedSessionController::class, 'store'])->name('login');
 
 //Route::get('/forgot-password', [PasswordResetLinkController::class, 'create'])
 //                ->middleware('guest')

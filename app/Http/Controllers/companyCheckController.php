@@ -12,5 +12,4 @@ class companyCheckController extends Controller
             return view('company-dashboard');
         return view('dashboard');
     }
-
 }
