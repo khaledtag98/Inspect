@@ -34,10 +34,10 @@
             <!-- Article -->
             <article class="justify-center w-full h-full overflow-hidden rounded-lg shadow-lg pro">
 
-                <a href="/{{$company->id}}"  class='justify-center w-full h-full'>
+                <a href="/{{$company->slug}}"  class='justify-center w-full h-full'>
                     <div class='w-full h-full cont'>
-                        <img alt="Placeholder" class="block object-fill w-full h-full" src="http://localhost/our-beautiful-project/resources/img/companies-logo/4aqaar-realestate.jpg">
-                        <a href="/{{$company->id}}" class="btn">View Company</a>
+                        <img alt="Placeholder" class="block object-fill w-full h-full" src="{{$company->picture}}">
+                        <a href="/{{$company->slug}}" class="btn">View Company</a>
                     </div>
                 </a>
 

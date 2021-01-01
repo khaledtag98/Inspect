@@ -2,25 +2,20 @@
 
 namespace Database\Factories;
 
-use App\Models\Company;
-use App\Models\User;
+use App\Models\Project;
+use App\Models\estate;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
-class CompanyFactory extends Factory
+class EstateFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Company::class;
+    protected $model = estate::class;
 
-    /**
-     * Define the model's default state.
-     *
-     * @return array
-     */
     public function definition()
     {
         $name = $this->faker->unique()->name;
@@ -28,12 +23,17 @@ class CompanyFactory extends Factory
         if (strlen($name)>=10){
             $imgUrl = 'https://via.placeholder.com/600x400.png/d9fbff/85afff?text='.$truncated;
         }else $imgUrl = 'https://via.placeholder.com/600x400.png/d9fbff/85afff?text='.$name;
+        $catygory = ["Land", "Apartment", "Chalet"];
         return [
-            'user_id'=> user::factory(),
+            'project_id'=> Project::factory(),
             'name' =>$name,
-            'slug' => Str::slug($name),
-            'picture' => $imgUrl,
+            'type' =>$catygory[rand(0, 2)],
+            'price' =>$this->faker->numberBetween(250,3000),
+            'block' =>$this->faker->numberBetween(1,20),
+            'floor' =>$this->faker->numberBetween(1,10),
             'description' => $this->faker->paragraph(3),
+            'available' =>$this->faker->boolean,
+            'picture' => $imgUrl,
         ];
     }
 }

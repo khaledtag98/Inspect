@@ -27,41 +27,33 @@
     <h1 id='projects' class='pl-32 text-xl font-bold lg:text-3xl '>Available Projects</h1>
     <div class="container px-4 mx-auto my-12 md:px-12">
     <div class="flex flex-wrap justify-center w-full -mx-1 lg:-mx-4">
-    @foreach(\App\Models\Project::all() as $key=>$project)
+    @foreach(\App\Models\Project::all() as $project)
         <!-- Column -->
-        <a href="{{$key+1}}/{{$project->id}}">
+        <a href="/{{$project->company->slug}}/{{$project->slug}}">
         <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 ">
 
             <!-- Article -->
             <article class="overflow-hidden rounded-lg shadow-lg ">
-                    <img alt="Placeholder" class="block w-full h-auto" src="https://picsum.photos/600/400/?random">
+                    <img alt="Placeholder" class="block w-full h-auto" src="{{$project->picture}}">
                 <header class="flex items-center justify-between p-2 leading-tight md:p-4">
                     <h1 class="text-lg">
-                        <a class="text-black no-underline hover:underline" href="#">
+                        <a class="text-black no-underline hover:underline" href="/{{$project->company->slug}}/{{$project->slug}}">
                             {{$project->name}}
                         </a>
                     </h1>
                 </header>
 
                 <footer class="flex items-center justify-between p-2 leading-none md:p-4">
-                    <a class="flex items-center text-black no-underline hover:underline" href="#">
-                        <img alt="Placeholder" class="block rounded-full" src="https://picsum.photos/32/32/?random">
-                        <p class="ml-2 text-sm">
-                            Company Name
+                    <a class="flex items-center text-black no-underline hover:underline" href="/{{$project->company->slug}}">
+                        <img alt="Placeholder" class="block rounded-full" src="{{$project->company->picture}}">
+                        <p  class="ml-2 text-sm">
+                           Company Name
                         </p>
                     </a>
-                    <a class="no-underline text-grey-darker hover:text-red-dark" href="#">
-                        <span class="hidden">Like</span>
-                        <i class="fa fa-heart"></i>
-                    </a>
                 </footer>
-
             </article>
-            <!-- END Article -->
-
         </div>
         </a>
-        <!-- END Column -->
     @endforeach
 
 

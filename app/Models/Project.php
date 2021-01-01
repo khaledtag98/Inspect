@@ -9,12 +9,18 @@ use Illuminate\Support\Str;
 class Project extends Model
 {
     use HasFactory;
+
     protected $table = "projects";
-    protected $fillable =["name","description","address", "company_id"];
-    public function companies(){
+    protected $fillable = ["name", "description", "address", "company_id"];
+
+    public function company()
+    {
         return $this->belongsTo(Company::class);
     }
-    public function estates(){
+
+    public function estates()
+    {
         return $this->hasMany(estate::class);
     }
+
 }

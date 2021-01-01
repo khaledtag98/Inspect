@@ -3,6 +3,9 @@
 namespace Database\Seeders;
 
 use App\Models\Company;
+use App\Models\estate;
+use App\Models\Project;
+use App\Models\User;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -14,12 +17,16 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-         \App\Models\User::factory(20)->create();
-//        factory(App\User::class, 50)->create()->each(function($u) {
-//            $u->posts()->save(factory(App\Post::class)->make());
-//        });
-        $CompanySeeder = new CompanySeeder();
-        $CompanySeeder->run();
+        User::factory(20)->has(
+            Company::factory()->has(
+                Project::factory()->has(
+                    estate::factory()->count(5)
+                )->count(5)
+            )->count(1)
+        )->create();
+
+//        $CompanySeeder = new CompanySeeder();
+//        $CompanySeeder->run();
 
     }
 }

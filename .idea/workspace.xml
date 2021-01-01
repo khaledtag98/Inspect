@@ -3,8 +3,28 @@
   <component name="ChangeListManager">
     <list default="true" id="35b58067-bb1f-4879-a2cd-262684e45e20" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/companyCheckController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/companyCheckController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisteredUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisteredUserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CompanyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CompanyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/projectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/projectController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Company.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Company.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Project.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/CompanyFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_04_155333_create_companies_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_04_155333_create_companies_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_04_175656_create_projects_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_04_175656_create_projects_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_04_180600_create_estates_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_04_180600_create_estates_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/CompanySeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/CompanySeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/EstateSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/ProjectSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/profile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/all-companies.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/all-companies.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/all-projects.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/all-projects.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/company-dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/company-dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/company-profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/company-profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/project-profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/project-profile.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,9 +45,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/resources/views/company-dashboard.blade.php" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/resources/views/project-profile.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/View/Components/modal.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" root2="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisteredUserController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/CompanyController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/PasswordResetLinkController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/database/seeders/CompanySeeder.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/Http/Controllers/projectController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/resources/views/all-projects.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
@@ -155,7 +179,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Project_Default.xml" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.path.for.package.stylelint" value="project" />
     <property name="node.js.selected.package.stylelint" value="" />
@@ -182,7 +206,13 @@
       <workItem from="1608054854681" duration="16867000" />
       <workItem from="1608091729723" duration="31917000" />
       <workItem from="1608498975704" duration="8000" />
-      <workItem from="1608779634999" duration="360000" />
+      <workItem from="1608779634999" duration="12761000" />
+      <workItem from="1608940109923" duration="11231000" />
+      <workItem from="1608978671576" duration="612000" />
+      <workItem from="1609219259704" duration="1679000" />
+      <workItem from="1609424563481" duration="30000" />
+      <workItem from="1609424640327" duration="19697000" />
+      <workItem from="1609501162824" duration="11169000" />
     </task>
     <servers />
   </component>

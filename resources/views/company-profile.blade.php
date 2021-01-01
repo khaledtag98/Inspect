@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="http://localhost/our-beautiful-project/resources/css/all-projects.css">
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
 @endsection
 
 @section('content')
@@ -14,11 +15,12 @@
         <div class='justify-center w-1/3 bg-blue'>
             <h1 id='c_name' class='mb-6 text-2xl font-bold'>{{$company->name}}</h1>
             <div class="w-full mb-12 align-center">
-                <img class="antialiased rounded-lg shadow-lg" src="http://localhost/our-beautiful-project/resources/img/companies-logo/4aqaar-realestate.jpg">
+                <img class="antialiased  rounded-lg shadow-lg" src="{{$company->picture}}">
             </div>
             <h1 class='mb-3 font-bold text-l'>Description</h1>
             <p id='c_description' class='text-l'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
             <h1 class='mt-6 mb-3 font-bold text-l'>Address</h1>
+{{--{{dd($company[0]->addresses)}}--}}
             @foreach($company->addresses as $address)
             <p id='c_address' class='text-l'>{{$address->street}},{{$address->city}},{{$address->country}}</p>
             @endforeach
@@ -67,28 +69,31 @@
                         <!-- Article -->
                         <article class="overflow-hidden rounded-lg shadow-lg ">
 
-                            <a href="/{{$project->company_id}}/{{$project->id}}">
-                                <img alt="Placeholder" class="block w-full h-auto" src="https://picsum.photos/600/400/?random">
+                            <a href="/{{$company->slug}}/{{$project->slug}}">
+                                <img alt="Placeholder" class="block w-full h-auto" src="{{$project->picture}}">
                             </a>
 
-                            <header class="flex items-center justify-between p-2 leading-tight md:p-4">
+                            <header class="flex items-center justify-between py-2 px-2 leading-tight md:px-4">
                                 <h1 class="text-lg">
-                                    <a class="text-black no-underline hover:underline" href="/{{$project->company_id}}/{{$project->id}}">
+                                    <a class="text-black no-underline hover:underline" href="/{{$company->slug}}/{{$project->slug}}">
                                         {{$project->name}}
                                     </a>
                                 </h1>
                             </header>
 
-                            <footer class="flex items-center justify-between p-2 leading-none md:p-4">
-                                <a class="flex items-center text-black no-underline hover:underline" href="#">
-                                    <img alt="Placeholder" class="block rounded-full" src="https://picsum.photos/32/32/?random">
-                                    <p class="ml-2 text-sm">
-                                        {{$company->name}}
+                            <footer class="py-2 px-2 leading-none md:px-4">
+
+                                <a class="no-underline " href="/{{$company->slug}}/{{$project->slug}}">
+
+                                    <p class="mb-2 truncate overflow-ellipsis text-gray-500" >
+                                        {{$project->address}}
                                     </p>
                                 </a>
-                                <a class="no-underline text-grey-darker hover:text-red-dark" href="#">
-                                    <span class="hidden">Like</span>
-                                    <i class="fa fa-heart"></i>
+                                <a class="no-underline " href="/{{$company->slug}}/{{$project->slug}}">
+
+                                    <p class="mb-2  text-sm">
+                                        {{$project->description}}
+                                    </p>
                                 </a>
                             </footer>
 

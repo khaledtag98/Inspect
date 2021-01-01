@@ -14,7 +14,7 @@
         <div class='w-full justify-center lg:w-1/3 bg-blue'>
             <h1 id='c_name' class='mb-6 text-2xl font-bold'>{{$project->name}}</h1>
             <div class="w-full mb-12 align-center">
-                <img class="antialiased rounded-lg shadow-lg" src="https://picsum.photos/600/400/?random">
+                <img class="antialiased rounded-lg shadow-lg" src="{{$project->picture}}">
             </div>
             <h1 class='mt-6 mb-3 font-bold text-l'>Address</h1>
             <p id='c_address' class='text-l'>{{$project->address}}</p>
@@ -32,7 +32,7 @@
                             <div class="h-full flex flex-wrap overflow-hidden border-2 border-gray-200 rounded-lg">
                                 <div class="w-full">
                                     <img class="object-cover object-center w-full lg:h-48 md:h-36"
-                                         src="http://localhost/our-beautiful-project/resources/img/house-1.jpg"
+                                         src="{{$estate->picture}}"
                                          alt="blog">
                                 </div>
 

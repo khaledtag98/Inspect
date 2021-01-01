@@ -22,6 +22,7 @@ class CreateEstatesTable extends Migration
             $table->text('description');
             $table->string('block');
             $table->string('floor');
+            $table->string('picture');
             $table->boolean('available');
             $table->timestamps();
         });

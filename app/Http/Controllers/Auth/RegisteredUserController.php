@@ -10,6 +10,7 @@ use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
 
 class RegisteredUserController extends Controller
 {
@@ -46,7 +47,9 @@ class RegisteredUserController extends Controller
         ]));
 
         if(isset($request->isCompany)){
-            Company::create(['user_id' => $user->id, 'name'=> $request->name]);
+            Company::create(['user_id' => $user->id,
+                             'slug'=> Str::slug($request->name),
+                             'name'=> $request->name]);
         }
 
         event(new Registered($user));

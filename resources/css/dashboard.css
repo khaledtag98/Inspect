@@ -1,0 +1,27 @@
+.edit-photo{
+    top: 10px;
+    right: 5px;
+    transition: transform 250ms ease-in-out;
+}
+.edit-photo:active{
+    transform: scale(.9);
+}
+.separator
+{
+    width: 1px;
+}
+.position-mine{
+    top: 6px;
+    left: 20px;
+}
+.social i {
+    transition: transform 250ms ease-in-out;
+
+}
+
+.social i:active {
+    transform: scale(.9);
+}
+.max-h-0 {
+    max-height: 0;
+}

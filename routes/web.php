@@ -30,8 +30,8 @@ Route::get('/all-companies',
 Route::get('/sign-in', function () {return view('sign-in');})->middleware('guest')->name('sign-in');
 Route::get('/dashboard',[companyCheckController::class, 'isCompany'])->middleware(['auth'])->name('dashboard');
 Route::post('/create-new-project', [projectController::class, 'store']);
-Route::get('{company_id}', [CompanyController::class, 'show']);
-Route::get('{company_id}/{project_id}', [projectController::class, 'show']);
+Route::get('{company_slug}', [CompanyController::class, 'show']);
+Route::get('{company_slug}/{project_slug}', [projectController::class, 'show']);
 require __DIR__.'/auth.php';
 
 
