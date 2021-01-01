@@ -45,7 +45,7 @@
 
                 <footer class="flex items-center justify-between p-2 leading-none md:p-4">
                     <a class="flex items-center text-black no-underline hover:underline" href="/{{$project->company->slug}}">
-                        <img alt="Placeholder" class="block rounded-full" src="{{$project->company->picture}}">
+                        <img alt="Placeholder" class="block w-12 h-12 rounded-full" src="{{$project->company->picture}}">
                         <p  class="ml-2 text-sm">
                            Company Name
                         </p>
