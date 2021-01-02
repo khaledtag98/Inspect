@@ -5,6 +5,8 @@ use \App\Http\Controllers\projectController;
 use \App\Http\Controllers\companyCheckController;
 use \App\Http\Controllers\CompanyController;
 use \App\Http\Controllers\EstateController;
+use App\Models\Company;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,8 +25,18 @@ Route::get('/all-projects', function () {return view('all-projects');})->name('p
 Route::get('/all-companies',
     function () {
         $companies = \App\Models\Company::all() ;
+        dd($companies);
         return view('all-companies' , ['companies' => $companies]);
     })->name('companies');
+    Route::get('/results',
+    function () {
+        $companies = \App\Models\Company::where('name', 'LIKE', '%'. request('query') . '%')->get();
+        $projects =  \App\Models\Project::where('name', 'LIKE', '%'. request('query') . '%')->get();
+        $estates = \App\Models\estate::where('name', 'LIKE', '%'. request('query') . '%')->get();
+
+        return view('search-results')->with(['companies'=>$companies])->with(['projects'=> $projects])->with(['estates'=> $estates]);
+    
+    });
 
 
 Route::get('/sign-in', function () {return view('sign-in');})->middleware('guest')->name('sign-in');
@@ -32,6 +44,15 @@ Route::get('/dashboard',[companyCheckController::class, 'isCompany'])->middlewar
 Route::post('/create-new-project', [projectController::class, 'store']);
 Route::get('{company_slug}', [CompanyController::class, 'show']);
 Route::get('{company_slug}/{project_slug}', [projectController::class, 'show']);
+
+// Route::get('/results', function(){
+//     // where('name','LIKE', '%' . request('query') . '%')->get()
+//     $companies = App\Models\Company::all();
+ 
+//     dd($companies);//print 
+//     return view('search-results');
+// });
+
 require __DIR__.'/auth.php';
 
 

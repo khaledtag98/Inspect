@@ -36,6 +36,7 @@
                                     class="px-12 py-3 mt-6 rounded-sm shadow-md bg-button2">Find what suits you</a>
                             </div>
                         </div>
+                       
                     </div>
                 </section>
             </div>

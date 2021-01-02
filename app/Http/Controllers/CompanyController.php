@@ -17,4 +17,7 @@ class CompanyController extends Controller
         return view('company-profile', ['company' => $companyModels[0]]);
 
     }
+
+
+    
 }

@@ -42,6 +42,7 @@ class Company extends Model
         return $this->hasMany(Address::class);
     }
 
+   
 
 }
 

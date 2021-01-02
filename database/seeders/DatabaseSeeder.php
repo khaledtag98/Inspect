@@ -17,12 +17,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        User::factory(20)->has(
-            Company::factory()->has(
-                Project::factory()->has(
-                    estate::factory()->count(5)
-                )->count(5)
-            )->count(1)
+        User::factory(50)->has(
+            Company::factory(20)->has(
+                Project::factory(20)->has(
+                    estate::factory(5)->count(50)
+                )->count(50)
+            )->count(10)
         )->create();
 
 //        $CompanySeeder = new CompanySeeder();
