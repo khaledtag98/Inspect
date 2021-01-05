@@ -45,13 +45,7 @@ Route::post('/create-new-project', [projectController::class, 'store']);
 Route::get('{company_slug}', [CompanyController::class, 'show']);
 Route::get('{company_slug}/{project_slug}', [projectController::class, 'show']);
 
-// Route::get('/results', function(){
-//     // where('name','LIKE', '%' . request('query') . '%')->get()
-//     $companies = App\Models\Company::all();
- 
-//     dd($companies);//print 
-//     return view('search-results');
-// });
+
 
 require __DIR__.'/auth.php';
 

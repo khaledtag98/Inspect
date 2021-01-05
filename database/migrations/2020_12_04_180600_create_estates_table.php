@@ -15,7 +15,6 @@ class CreateEstatesTable extends Migration
     {
         Schema::create('estates', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('project_id');
             $table->string('name');
             $table->string('type');
             $table->string('price');
@@ -25,6 +24,8 @@ class CreateEstatesTable extends Migration
             $table->string('picture');
             $table->boolean('available');
             $table->timestamps();
+            $table->bigInteger('project_id')->unsigned();
+            $table->foreign('project_id')->references('id')->on('projects')->onDelete('cascade');
         });
     }
 
