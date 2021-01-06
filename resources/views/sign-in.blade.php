@@ -117,11 +117,18 @@
                                            onclick="handleChange();"/>
                                     <label for="isCompany">Are you a company?</label>
                                 </div>
-                                <div id="company-name" class="mt-4 hidden">
+                                <div id="company-name" class="hidden mt-4">
                                     <x-label for="companyName" :value="__('Company name')"/>
-
-                                    <x-input id="companyName" class="block mt-1 w-full" type="text" name="companyName"
+                                    <x-input id="companyName" name="cName" class="block w-full mt-1" type="text" 
                                              :value="old('companyName')"/>
+                                    
+                                    <x-label class="mt-4" for="companyAddress" :value="__('Company Address')"/>
+                                    <x-input id="companyAddress" class="block w-full mt-1" type="text" name="companyAddress"
+                                             :value="old('companyAddress')"/>
+
+                                    <x-label class="mt-4" for="companyPhones" :value="__('Company Phone Number')"/>
+                                    <x-input id="companyPhones" class="block w-full mt-1" type="text" name="companyPhones"
+                                            :value="old('companyPhones')"/>
                                 </div>
                                 <div class="flex items-center justify-end mt-4">
                                     <x-button class="ml-4">

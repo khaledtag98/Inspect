@@ -8,8 +8,12 @@ use Illuminate\Support\Facades\Auth;
 class companyCheckController extends Controller
 {
     public function isCompany(){
-        if(Auth::user()->company)
+        
+         if(Auth::user()->company){
             return view('company-dashboard');
-        return view('dashboard');
+         }
+            
+        
+         return view('dashboard');
     }
 }
