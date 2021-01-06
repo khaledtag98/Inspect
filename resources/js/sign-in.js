@@ -19,3 +19,6 @@ $(".tab-slider--nav li").click(function () {
     $(this).addClass("active");
     currntTab = activeTab;
 });
+function handleChange() {
+    document.getElementById("company-name").classList.toggle('hidden');
+}

@@ -48,8 +48,8 @@ class RegisteredUserController extends Controller
 
         if(isset($request->isCompany)){
             Company::create(['user_id' => $user->id,
-                             'slug'=> Str::slug($request->name),
-                             'name'=> $request->name]);
+                             'slug'=> Str::slug($request->companyName),
+                             'name'=> $request->companyName]);
         }
 
         event(new Registered($user));
