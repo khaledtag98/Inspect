@@ -47,7 +47,7 @@
                     <a class="flex items-center text-black no-underline hover:underline" href="/{{$project->company->slug}}">
                         <img alt="Placeholder" class="block w-12 h-12 rounded-full" src="{{$project->company->picture}}">
                         <p  class="ml-2 text-sm">
-                           Company Name
+                           {{$project->company->name}}
                         </p>
                     </a>
                 </footer>

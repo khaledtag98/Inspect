@@ -16,10 +16,10 @@
             <!-- Add margin if you want to see grey behind the modal-->
             <div class="container h-auto p-4 mx-auto text-left bg-fixed modal-content">
 
-                <div class='flex space-x-12 w-full my-16  modal-close'>
+                <div class='flex w-full my-16 space-x-12 modal-close'>
                     <div
-                        class='flex space-y-2 flex-wrap shadow-inner zxczxc  py-8 px-8 w-2/3 h-screen overflow-y-scroll'>
-                        <div class="flex space-x-2 w-full ">
+                        class='flex flex-wrap w-2/3 h-screen px-8 py-8 space-y-2 overflow-y-scroll shadow-inner zxczxc'>
+                        <div class="flex w-full space-x-2 ">
                             <div class='w-1/2'>
                                 <img src='http://localhost/our-beautiful-project/resources/img/house-2.jpg' alt="">
                             </div>
@@ -28,7 +28,7 @@
                                 <img src='http://localhost/our-beautiful-project/resources/img/house-3.jpg' alt="">
                             </div>
                         </div>
-                        <div class="flex space-x-3 w-full ">
+                        <div class="flex w-full space-x-3 ">
                             <div class='w-1/2'>
                                 <img src='http://localhost/our-beautiful-project/resources/img/house-2.jpg' alt="">
                             </div>
@@ -37,7 +37,7 @@
                                 <img src='http://localhost/our-beautiful-project/resources/img/house-3.jpg' alt="">
                             </div>
                         </div>
-                        <div class="flex space-x-3 w-full ">
+                        <div class="flex w-full space-x-3 ">
                             <div class='w-1/2'>
                                 <img src='http://localhost/our-beautiful-project/resources/img/house-2.jpg' alt="">
                             </div>
@@ -46,7 +46,7 @@
                                 <img src='http://localhost/our-beautiful-project/resources/img/house-3.jpg' alt="">
                             </div>
                         </div>
-                        <div class="flex space-x-3 w-full ">
+                        <div class="flex w-full space-x-3 ">
                             <div class='w-1/2'>
                                 <img src='http://localhost/our-beautiful-project/resources/img/house-2.jpg' alt="">
                             </div>
@@ -55,7 +55,7 @@
                                 <img src='http://localhost/our-beautiful-project/resources/img/house-3.jpg' alt="">
                             </div>
                         </div>
-                        <div class="flex space-x-3 w-full ">
+                        <div class="flex w-full space-x-3 ">
                             <div class='w-1/2'>
                                 <img src='http://localhost/our-beautiful-project/resources/img/house-2.jpg' alt="">
                             </div>
@@ -74,13 +74,7 @@
                         <p>Tel: +2035000000 </p><br>
                         <h1 class='text-2xl font-bold'>Description</h1>
                         <p>{{$description}}</p>
-                        @if ($available)
-                            <button class='px-12 py-3 my-10 bg-button1'>Book a tour</button>
-                        @else
-                            <button class='px-12 cursor-not-allowed py-3 my-10 bg-button1'>sold out!</button>
-                        @endif
-
-
+                        <button onclick="location.href='{{ url('/request-inspection') }}'" value="{{url('/book-a-tour')}}" class='px-12 py-3 my-10 bg-button1'>Request inspection</button>
                     </div>
                 </div>
             </div>

@@ -5,7 +5,10 @@ use \App\Http\Controllers\projectController;
 use \App\Http\Controllers\companyCheckController;
 use \App\Http\Controllers\CompanyController;
 use \App\Http\Controllers\EstateController;
+use App\Http\Controllers\MailController;
+use App\Mail\RequestInspection;
 use App\Models\Company;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -28,16 +31,21 @@ Route::get('/all-companies',
         dd($companies);
         return view('all-companies' , ['companies' => $companies]);
     })->name('companies');
-    Route::get('/results',
+
+Route::get('/results',
     function () {
         $companies = \App\Models\Company::where('name', 'LIKE', '%'. request('query') . '%')->get();
         $projects =  \App\Models\Project::where('name', 'LIKE', '%'. request('query') . '%')->get();
         $estates = \App\Models\estate::where('name', 'LIKE', '%'. request('query') . '%')->get();
-
         return view('search-results')->with(['companies'=>$companies])->with(['projects'=> $projects])->with(['estates'=> $estates]);
     
     });
 
+Route::get('/send-request',  [MailController::class, 'send']);
+
+Route::get('/request-inspection', function(){
+    return view('book-system');
+});
 
 Route::get('/sign-in', function () {return view('sign-in');})->middleware('guest')->name('sign-in');
 Route::get('/dashboard',[companyCheckController::class, 'isCompany'])->middleware(['auth'])->name('dashboard');
