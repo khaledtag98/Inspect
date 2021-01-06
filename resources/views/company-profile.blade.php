@@ -1,6 +1,6 @@
 @extends('layout.layout')
 
-@section('title', 'Available Projects')
+@section('title', 'Inspect | Company Name')
 
 @section('customCSS')
 <link rel="stylesheet" href="http://localhost/our-beautiful-project/resources/css/all-projects.css">
