@@ -11,6 +11,7 @@ use App\Providers\RouteServiceProvider;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 
@@ -45,12 +46,14 @@ class RegisteredUserController extends Controller
         Auth::login($user = User::create([
             'name' => $request->name,
             'email' => $request->email,
-            'picture' => 'https://via.placeholder.com/600x400.png/d9fbff/85afff?text='.$request->email,
+            'picture' => 'https://via.placeholder.com/600x400.png/d9fbff/85afff?text='.$request->name,
             'password' => Hash::make($request->password),
         ]));
 
         if(isset($request->isCompany)){
-            $company = Company::create(['user_id' => $user->id,
+
+          $company =  Company::create(['user_id' => $user->id,
+                            'picture' => 'https://via.placeholder.com/600x400.png/d9fbff/85afff?text='.$request->companyName,
                              'slug'=> Str::slug($request->companyName),
                              'name'=> $request->companyName,
                              'description' => $request->description]);
@@ -70,4 +73,15 @@ class RegisteredUserController extends Controller
 
         return redirect(RouteServiceProvider::HOME);
     }
+    public function update(Request $request)
+    {
+//        $request->validate([
+//            'name' => 'required|string|max:255|unique:companies',
+//            'email' => 'required|string|email|max:255|unique:users',
+//            'password' => 'required|string|confirmed|min:8',
+//        ]);
+        DB::update('update users set name = ?,email=?,password=? where id = ?',[$request->name,$request->email,Hash::make($request->password),Auth::id()]);
+        return redirect('dashboard');
+    }
+
 }

@@ -110,7 +110,7 @@
                                     onclick="handleChange();" />
                                 <label for="isCompany">Are you a company?</label>
                             </div>
-                            <div class="mt-4" id="company-name" class="hidden mt-4">
+                            <div  id="company-form" class="hidden mt-4">
                                 <x-label for="companyName" :value="__('Company Name')" />
                                 <x-input id="companyName" class="block w-full mt-1" type="text" name="companyName"
                                     :value="old('companyName')" />
@@ -133,7 +133,7 @@
 
                                 <x-label  class="mt-4" for="description" :value="__('Tell us about your company')" />
                                 <textarea cols="30" rows="6" class="w-full p-3 mt-1 border-2 border-gray-400 border-solid md:text-xl" name="description" id="description" placeholder="Enter the description"></textarea>
-                                    
+
                             </div>
                             <div class="flex items-center justify-end mt-4">
                                 <x-button class="ml-4">

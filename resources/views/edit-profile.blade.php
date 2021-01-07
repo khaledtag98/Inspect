@@ -11,13 +11,6 @@
 <section class="my-32">
     <div
         class="container w-11/12 px-8 pt-6 pb-16 mx-auto bg-white rounded-lg shadow-lg md:w-5/6 md:pb-16 md:px-16 lg:w-2/3">
-        <div class="flex justify-end">
-            <a href="">
-                <div class="flex items-center justify-center cursor-pointer">
-                    <div class="font-medium shadow-md magnifyBtn">X</div>
-                </div>
-            </a>
-        </div>
         <div class="flex flex-wrap mt-6">
             <div class="w-full md:w-2/5">
                 <div style="background-image: url('http://localhost/our-beautiful-project/resources/img/profile-placeholder.jpg')"

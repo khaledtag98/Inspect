@@ -82,20 +82,20 @@
         },
         {
             "name": "algolia/scout-extended",
-            "version": "1.10.2",
+            "version": "v1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/algolia/scout-extended.git",
-                "reference": "ff39d6734b87b0ae1ba26e1752ecb0be021d9fc2"
+                "reference": "bcbdd44b22e4ed742c363d23b8d4c3193d543ce2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/algolia/scout-extended/zipball/ff39d6734b87b0ae1ba26e1752ecb0be021d9fc2",
-                "reference": "ff39d6734b87b0ae1ba26e1752ecb0be021d9fc2",
+                "url": "https://api.github.com/repos/algolia/scout-extended/zipball/bcbdd44b22e4ed742c363d23b8d4c3193d543ce2",
+                "reference": "bcbdd44b22e4ed742c363d23b8d4c3193d543ce2",
                 "shasum": ""
             },
             "require": {
-                "algolia/algoliasearch-client-php": "^2.5.1",
+                "algolia/algoliasearch-client-php": "^2.7.3",
                 "ext-json": "*",
                 "illuminate/console": "^6.0|^7.0|^8.0",
                 "illuminate/contracts": "^6.0|^7.0|^8.0",
@@ -103,15 +103,15 @@
                 "illuminate/filesystem": "^6.0|^7.0|^8.0",
                 "illuminate/support": "^6.0|^7.0|^8.0",
                 "laravel/scout": "^8.0",
-                "php": "^7.3",
+                "php": "^7.3|^8.0",
                 "riimu/kit-phpencoder": "^2.4"
             },
             "require-dev": {
-                "fzaninotto/faker": "^1.8",
-                "laravel/legacy-factories": "^1.0",
-                "mockery/mockery": "^1.1",
+                "fakerphp/faker": "^1.13",
+                "laravel/legacy-factories": "^1.1",
+                "mockery/mockery": "^1.4",
                 "nunomaduro/larastan": "^0.6",
-                "orchestra/testbench": "^4.0|^5.0|^6.0",
+                "orchestra/testbench": "^4.9|^5.9|^6.6",
                 "phpstan/phpstan": "^0.12.14",
                 "phpunit/phpunit": "^8.0|^9.0"
             },
@@ -157,9 +157,9 @@
             ],
             "support": {
                 "issues": "https://github.com/algolia/scout-extended/issues",
-                "source": "https://github.com/algolia/scout-extended/tree/1.10.2"
+                "source": "https://github.com/algolia/scout-extended/tree/v1.11.0"
             },
-            "time": "2020-11-24T10:23:31+00:00"
+            "time": "2021-01-04T09:34:22+00:00"
         },
         {
             "name": "asm89/stack-cors",
@@ -1108,16 +1108,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v8.20.1",
+            "version": "v8.21.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "b5d8573ab16027867eaa1ac148893833434f9b02"
+                "reference": "a61cab167c35f465a923737ee6e6fb99cd5fde88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/b5d8573ab16027867eaa1ac148893833434f9b02",
-                "reference": "b5d8573ab16027867eaa1ac148893833434f9b02",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/a61cab167c35f465a923737ee6e6fb99cd5fde88",
+                "reference": "a61cab167c35f465a923737ee6e6fb99cd5fde88",
                 "shasum": ""
             },
             "require": {
@@ -1271,20 +1271,20 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2020-12-22T21:21:19+00:00"
+            "time": "2021-01-05T15:43:10+00:00"
         },
         {
             "name": "laravel/scout",
-            "version": "v8.5.2",
+            "version": "v8.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/scout.git",
-                "reference": "ece6758b82c51ff7f5e011f243a7c6b33711a847"
+                "reference": "3cb9a6e66f58f61ed1adf66c138034e496c60d3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/scout/zipball/ece6758b82c51ff7f5e011f243a7c6b33711a847",
-                "reference": "ece6758b82c51ff7f5e011f243a7c6b33711a847",
+                "url": "https://api.github.com/repos/laravel/scout/zipball/3cb9a6e66f58f61ed1adf66c138034e496c60d3f",
+                "reference": "3cb9a6e66f58f61ed1adf66c138034e496c60d3f",
                 "shasum": ""
             },
             "require": {
@@ -1340,7 +1340,7 @@
                 "issues": "https://github.com/laravel/scout/issues",
                 "source": "https://github.com/laravel/scout"
             },
-            "time": "2020-12-30T15:52:14+00:00"
+            "time": "2021-01-05T16:53:44+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -5777,16 +5777,16 @@
         },
         {
             "name": "laravel/breeze",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/breeze.git",
-                "reference": "9c0ba2c53f19ff7aedc2e4dc3609da49a8f3a1f7"
+                "reference": "24cf5acc5a77020465f304ce2d7f6b702f845d57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/breeze/zipball/9c0ba2c53f19ff7aedc2e4dc3609da49a8f3a1f7",
-                "reference": "9c0ba2c53f19ff7aedc2e4dc3609da49a8f3a1f7",
+                "url": "https://api.github.com/repos/laravel/breeze/zipball/24cf5acc5a77020465f304ce2d7f6b702f845d57",
+                "reference": "24cf5acc5a77020465f304ce2d7f6b702f845d57",
                 "shasum": ""
             },
             "require": {
@@ -5829,7 +5829,7 @@
                 "issues": "https://github.com/laravel/breeze/issues",
                 "source": "https://github.com/laravel/breeze"
             },
-            "time": "2020-12-22T16:46:07+00:00"
+            "time": "2021-01-05T16:01:28+00:00"
         },
         {
             "name": "mockery/mockery",

@@ -8,6 +8,17 @@
 @endsection
 
 @section('content')
+    <div class="bg-white py-5 px-10 my-8 w-3/5 mx-auto shadow-sm">
+        <div class="flex">
+            <div class="w-1/3">
+                <img class="w-40 h-40 rounded-full" src="{{$company->picture}}">
+            </div>
+            <div class="w-2/3 self-center">
+                <h3 class="text-2xl font-semibold text-blue-800">{{$company->name}}</h3>
+                <p class="text-blue-800">{{$company->description}}</p>
+            </div>
+        </div>
+    </div>
     <div x-data={show:false}>
         <div class="container flex justify-end w-full mx-auto mt-10">
             <button @click="show=!show"
@@ -60,39 +71,49 @@
     </div>
 
 
-    <div class="flex flex-col">
+    <div class="flex flex-col my-10">
         <div class="overflow-x-auto ">
 
-            <div class="pt-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+            <div class=" align-middle inline-block min-w-full sm:px-6 lg:px-8">
                 <div
-                     class="shadow  bg-white overflow-hidden border-b border-gray-200 sm:rounded-lg">
-                    <div class="grid grid-cols-12 py-2 px-5 bg-gray-200 gap-2 uppercase font-semibold text-gray-500 ">
-                        <div class="">Index</div>
-                        <div class="col-span-2">Project name</div>
+                     class="shadow w-5/6 mx-auto bg-white overflow-hidden border-b border-gray-200 sm:rounded-lg">
+                    <div class="grid grid-cols-12 py-2  bg-gray-200 gap-2 uppercase font-semibold text-gray-500 ">
+                        <div class="text-center">Index</div>
+                        <div class="col-span-3">Project name</div>
                         <div class="col-span-2">Address</div>
-                        <div class="">Total Estates</div>
-                        <div class=""></div>
+                        <div class="col-span-2">Total Estates</div>
+                        <div class="col-span-2">created at</div>
                     </div>
-                    <div class="grid grid-cols-12 px-5 py-2 gap-2 text-gray-700 bg-white ">
-                        <div class="truncate">1</div>
-                        <div class="col-span-2 truncate">
-                            <img class="rounded-full inline mr-3 w-8 h-8"
-                                 src="https://via.placeholder.com/600x400.png/d9fbff/85afff?text=khaled" alt="">
-                            khaled
+
+                    @if($projects)
+                    @foreach($projects as $key=>$project)
+                        <div class="grid grid-cols-12 py-2 gap-2 text-gray-700 bg-white border-b">
+                            <div class="truncate text-center">{{$key+1}}</div>
+                            <div class="col-span-3 truncate">
+                                <img class="rounded-full inline mr-3 w-8 h-8"
+                                     src="{{$project->picture}}" alt="">
+                                {{$project->name}}
+                            </div>
+                            <div class="col-span-2 inline truncate">{{$project->address}}</div>
+                            <div class="truncate col-span-2 ">32</div>
+                            <div class="truncate col-span-2 ">{{$project->created_at->format('M, d Y')}}</div>
+                            <div >
+                                <a href="{{"edit-project/".$project->id}}" class="text-blue-700 hover:underline cursor-pointer">
+                                    edit
+                                </a>
+                            </div>
+                            <div class="">
+                                <a href="{{"delete/".$project->id}}" class="text-blue-700 hover:underline cursor-pointer">
+                                    Delete
+                                </a>
+                            </div>
                         </div>
-                        <div class="col-span-2 inline truncate">20, meed eazxczxczxcsdasd asdasd</div>
-                        <div class="truncate">32</div>
-                        <div >
-                            <a class="text-blue-700 hover:underline cursor-pointer">
-                                edit
-                            </a>
+                    @endforeach
+                    @else
+                        <div class="py-2 gap-2 text-gray-700 bg-white border-b">
+                            <h1 class="text-center">No projects</h1>
                         </div>
-                        <div class="">
-                            <a class="text-blue-700 hover:underline cursor-pointer">
-                                Delete
-                            </a>
-                        </div>
-                    </div>
+                    @endif
                 </div>
             </div>
         </div>

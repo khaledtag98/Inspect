@@ -18,11 +18,11 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         User::factory(50)->has(
-            Company::factory(20)->has(
-                Project::factory(20)->has(
-                    estate::factory(5)->count(50)
-                )->count(50)
-            )->count(10)
+            Company::factory()->has(
+                Project::factory()->has(
+                    estate::factory()->count(5)
+                )->count(20)
+            )->count(1)
         )->create();
 
 //        $CompanySeeder = new CompanySeeder();

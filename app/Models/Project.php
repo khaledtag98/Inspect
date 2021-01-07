@@ -11,8 +11,8 @@ class Project extends Model
     use HasFactory;
 
     protected $table = "projects";
-    protected $fillable = ["name", "description", "address", "company_id"];
-
+//    protected $fillable = ["name", "description", "address", "company_id"];
+    protected $guarded = [];
     public function company()
     {
         return $this->belongsTo(Company::class);

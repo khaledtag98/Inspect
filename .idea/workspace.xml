@@ -2,7 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35b58067-bb1f-4879-a2cd-262684e45e20" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/all-projects.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/all-projects.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/edit-project.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/our-beautiful-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/our-beautiful-project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisteredUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisteredUserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/companyCheckController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/companyCheckController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/projectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/projectController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/EstatePhoto.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/EstatePhoto.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Project.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/SavedEstate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/SavedEstate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_04_175656_create_projects_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_04_175656_create_projects_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/sign-in.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/sign-in.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/company-dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/company-dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/edit-profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/edit-profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/navigation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/navigation.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sign-in.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sign-in.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,10 +43,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/resources/views/company-dashboard.blade.php" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/resources/views/company-dashboard.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/resources/views/sign-in.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/resources/views/project-profile.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/View/Components/modal.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" root2="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisteredUserController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/Http/Controllers/CompanyController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/PasswordResetLinkController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
@@ -33,6 +54,7 @@
     <setting file="file://$PROJECT_DIR$/app/Http/Controllers/projectController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/resources/views/all-projects.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/resources/js/sign-in.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/resources/views/dashboard.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -110,7 +132,6 @@
       <path value="$PROJECT_DIR$/vendor/league/flysystem" />
       <path value="$PROJECT_DIR$/vendor/fakerphp/faker" />
       <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
-      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
       <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
@@ -142,6 +163,14 @@
       <path value="$PROJECT_DIR$/vendor/laravel/breeze" />
       <path value="$PROJECT_DIR$/vendor/symfony/console" />
       <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/vendor/riimu/kit-phpencoder" />
+      <path value="$PROJECT_DIR$/vendor/algolia/algoliasearch-client-php" />
+      <path value="$PROJECT_DIR$/vendor/teamtnt/laravel-scout-tntsearch-driver" />
+      <path value="$PROJECT_DIR$/vendor/curl/curl" />
+      <path value="$PROJECT_DIR$/vendor/laravel/scout" />
+      <path value="$PROJECT_DIR$/vendor/teamtnt/tntsearch" />
+      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/vendor/algolia/scout-extended" />
     </include_path>
   </component>
   <component name="ProjectId" id="1lTx7bXHV3BylEHhCL6S59t2LNq" />
@@ -161,7 +190,13 @@
     <property name="node.js.path.for.package.stylelint" value="project" />
     <property name="node.js.selected.package.stylelint" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\our-beautiful-project\resources\views" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -190,6 +225,8 @@
       <workItem from="1609424563481" duration="30000" />
       <workItem from="1609424640327" duration="19697000" />
       <workItem from="1609501162824" duration="11683000" />
+      <workItem from="1609940639535" duration="12639000" />
+      <workItem from="1609961691138" duration="29183000" />
     </task>
     <servers />
   </component>
@@ -245,6 +282,11 @@
           <url>file://$PROJECT_DIR$/routes/auth.php</url>
           <line>2</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/edit-project.blade.php</url>
+          <line>181</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

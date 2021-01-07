@@ -38,7 +38,7 @@ Route::get('/results',
         $projects =  \App\Models\Project::where('name', 'LIKE', '%'. request('query') . '%')->get();
         $estates = \App\Models\estate::where('name', 'LIKE', '%'. request('query') . '%')->get();
         return view('search-results')->with(['companies'=>$companies])->with(['projects'=> $projects])->with(['estates'=> $estates]);
-    
+
     });
 
 Route::get('/send-request',  [MailController::class, 'send']);
@@ -46,14 +46,16 @@ Route::get('/send-request',  [MailController::class, 'send']);
 Route::get('/request-inspection', function(){
     return view('book-system');
 });
-
+Route::get('delete/{id}',[projectController::class,'delete']);
+Route::get('edit-project/{id}',[projectController::class,'showdata']);
+Route::post('edit-project',[projectController::class,'update'])->name('editProject');
 Route::get('/sign-in', function () {return view('sign-in');})->middleware('guest')->name('sign-in');
 Route::get('/dashboard',[companyCheckController::class, 'isCompany'])->middleware(['auth'])->name('dashboard');
 Route::post('/create-new-project', [projectController::class, 'store']);
 Route::get('{company_slug}', [CompanyController::class, 'show']);
 Route::get('{company_slug}/{project_slug}', [projectController::class, 'show']);
 
-
+Route::post('/update-user-info', [\App\Http\Controllers\Auth\RegisteredUserController::class, 'update'])->name('updateUserInfo');
 
 require __DIR__.'/auth.php';
 

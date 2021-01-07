@@ -17,7 +17,7 @@ class CreateProjectsTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('slug')->unique();
-            $table->text('description');
+            $table->text('description')->nullable();
             $table->text('address');
             $table->string('picture')->nullable();
             $table->timestamps();

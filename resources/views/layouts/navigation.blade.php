@@ -26,7 +26,7 @@
                 <x-nav-link :href="route('companies')" :active="request()->routeIs('companies')">
                     {{ __('Companies') }}
                 </x-nav-link>
-                
+
 
             </div>
             <!-- Settings Dropdown -->
@@ -36,7 +36,7 @@
                     <input
                         class="h-10 pl-2 pr-8 text-sm bg-white border-2 border-gray-300 rounded-lg focus:outline-none"
                         type="search" name="query" id="query" placeholder="Search Inspect">
-                    
+
                     <button method="GET" action="{{url('/results')}}" class="absolute top-0 right-0 mt-3 mr-2">
                         <svg class="w-4 h-4 text-gray-600 fill-current" xmlns="http://www.w3.org/2000/svg"
                              version="1.1" id="Capa_1" x="0px" y="0px"
@@ -89,7 +89,7 @@
                             {{ __('login') }}
                         </x-nav-link>
                     </button>
-                    
+
                 @endif
             </div>
 
