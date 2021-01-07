@@ -28,7 +28,7 @@ Route::get('/all-projects', function () {return view('all-projects');})->name('p
 Route::get('/all-companies',
     function () {
         $companies = \App\Models\Company::all() ;
-        dd($companies);
+        
         return view('all-companies' , ['companies' => $companies]);
     })->name('companies');
 

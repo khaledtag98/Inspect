@@ -23,6 +23,7 @@ class CreateProjectsTable extends Migration
             $table->timestamps();
             $table->bigInteger('company_id')->unsigned();
             $table->foreign('company_id')->references('id')->on('companies')->onDelete('cascade');
+
         });
     }
 

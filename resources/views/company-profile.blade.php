@@ -15,10 +15,10 @@
         <div class='justify-center w-1/3 bg-blue'>
             <h1 id='c_name' class='mb-6 text-2xl font-bold'>{{$company->name}}</h1>
             <div class="w-full mb-12 align-center">
-                <img class="antialiased  rounded-lg shadow-lg" src="{{$company->picture}}">
+                <img class="antialiased rounded-lg shadow-lg" src="{{$company->picture}}">
             </div>
             <h1 class='mb-3 font-bold text-l'>Description</h1>
-            <p id='c_description' class='text-l'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+            <p id='c_description' class='text-l'>{{$company->description}}</p>
             <h1 class='mt-6 mb-3 font-bold text-l'>Address</h1>
 {{--{{dd($company[0]->addresses)}}--}}
             @foreach($company->addresses as $address)
@@ -73,7 +73,7 @@
                                 <img alt="Placeholder" class="block w-full h-auto" src="{{$project->picture}}">
                             </a>
 
-                            <header class="flex items-center justify-between py-2 px-2 leading-tight md:px-4">
+                            <header class="flex items-center justify-between px-2 py-2 leading-tight md:px-4">
                                 <h1 class="text-lg">
                                     <a class="text-black no-underline hover:underline" href="/{{$company->slug}}/{{$project->slug}}">
                                         {{$project->name}}
@@ -81,17 +81,17 @@
                                 </h1>
                             </header>
 
-                            <footer class="py-2 px-2 leading-none md:px-4">
+                            <footer class="px-2 py-2 leading-none md:px-4">
 
                                 <a class="no-underline " href="/{{$company->slug}}/{{$project->slug}}">
 
-                                    <p class="mb-2 truncate overflow-ellipsis text-gray-500" >
+                                    <p class="mb-2 text-gray-500 truncate overflow-ellipsis" >
                                         {{$project->address}}
                                     </p>
                                 </a>
                                 <a class="no-underline " href="/{{$company->slug}}/{{$project->slug}}">
 
-                                    <p class="mb-2  text-sm">
+                                    <p class="mb-2 text-sm">
                                         {{$project->description}}
                                     </p>
                                 </a>

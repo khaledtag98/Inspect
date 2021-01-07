@@ -24,7 +24,7 @@ class Company extends Model
 
     public function company_phones()
     {
-        return $this->hasMany('App\Models\CompanyPhone');
+        return $this->hasMany(CompanyPhone::class);
     }
 
     public function projects()

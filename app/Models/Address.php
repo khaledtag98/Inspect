@@ -9,7 +9,7 @@ class Address extends Model
 {
     use HasFactory;
     protected $guarded = [];
-    public function companies(){
+    public function company(){
         return $this->belongsTo(Company::class);
     }
 }

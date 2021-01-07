@@ -9,7 +9,8 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class CompanyPhone extends Model
 {
     use HasFactory;
+    protected $guarded = [];
     public function companies(){
-        return $this->BelongsTo('App\Models\Company');
+        return $this->BelongsTo(Company::class);
     }
 }

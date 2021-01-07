@@ -15,7 +15,7 @@ class CreateCompanyPhonesTable extends Migration
     {
         Schema::create('company_phones', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('company_id');
+            $table->foreignIdFor(\App\Models\Company::class);
             $table->string('phone');
             $table->timestamps();
         });
