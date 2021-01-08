@@ -15,9 +15,10 @@ class CreateCompanyPhonesTable extends Migration
     {
         Schema::create('company_phones', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(\App\Models\Company::class);
             $table->string('phone');
             $table->timestamps();
+            $table->bigInteger('company_id')->unsigned();
+            $table->foreign('company_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 
