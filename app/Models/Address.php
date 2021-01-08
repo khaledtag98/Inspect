@@ -10,6 +10,6 @@ class Address extends Model
     use HasFactory;
     protected $guarded = [];
     public function company(){
-        return $this->belongsTo(Company::class);
+        return $this->belongsTo('App\Models\Company');
     }
 }

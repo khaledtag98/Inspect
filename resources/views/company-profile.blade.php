@@ -22,10 +22,11 @@
             <h1 class='mt-6 mb-3 font-bold text-l'>Address</h1>
 {{--{{dd($company[0]->addresses)}}--}}
             @foreach($company->addresses as $address)
-            <p id='c_address' class='text-l'>{{$address->street}},{{$address->city}},{{$address->country}}</p>
+            <p id='c_address' class='text-l'>{{$address->street}}, {{$address->city}}, {{$address->country}}</p>
             @endforeach
             <h1 class='mt-6 mb-3 font-bold text-l'>Phone Number(s)</h1>
-            <p id='c_address' class='text-l'>010001000<br>0112901001</p>
+            <p id='c_phone' class='text-l'>{{$phones->phone}}</p>
+            
 
             <div class='flex my-10'>
                 <a href='#' class='cursor:pointer'>
@@ -62,7 +63,7 @@
             <div class="container px-4 mx-auto my-12 md:px-12">
                 <div class="flex flex-wrap justify-center w-full -mx-1 lg:-mx-4">
                     @foreach($company->projects as $project)
-
+                    
                     <!-- Column -->
                     <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/2 ">
 
@@ -103,8 +104,9 @@
                     </div>
                     <!-- END Column -->
                         @endforeach
-
-
+                        @if (!$company->projects->count() > 0)
+                        <p class="m-0">This company has no projects to show at the moment</p>
+                        @endif
                 </div>
             </div>
         </div>

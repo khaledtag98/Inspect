@@ -80,7 +80,7 @@ class RegisteredUserController extends Controller
 //            'email' => 'required|string|email|max:255|unique:users',
 //            'password' => 'required|string|confirmed|min:8',
 //        ]);
-        DB::update('update users set name = ?,email=?,password=? where id = ?',[$request->name,$request->email,Hash::make($request->password),Auth::id()]);
+        DB::update('UPDATE users SET name = ?,email=?,password=? WHERE id = ?',[$request->name,$request->email,Hash::make($request->password),Auth::id()]);
         return redirect('dashboard');
     }
 

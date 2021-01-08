@@ -11,6 +11,6 @@ class CompanyPhone extends Model
     use HasFactory;
     protected $guarded = [];
     public function companies(){
-        return $this->BelongsTo(Company::class);
+        return $this->BelongsTo('App\Models\Company');
     }
 }

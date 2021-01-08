@@ -18,7 +18,7 @@ class CreateCompanyPhonesTable extends Migration
             $table->string('phone');
             $table->timestamps();
             $table->bigInteger('company_id')->unsigned();
-            $table->foreign('company_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('company_id')->references('id')->on('companies')->onDelete('cascade');
         });
     }
 

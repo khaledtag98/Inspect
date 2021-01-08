@@ -24,7 +24,7 @@ class Company extends Model
 
     public function company_phones()
     {
-        return $this->hasMany(CompanyPhone::class);
+        return $this->hasMany('App\Models\CompanyPhone');
     }
 
     public function projects()
@@ -39,7 +39,7 @@ class Company extends Model
 
     public function addresses()
     {
-        return $this->hasMany(Address::class);
+        return $this->hasMany('App\Models\Address');
     }
 
    

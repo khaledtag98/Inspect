@@ -18,7 +18,6 @@ class CreateSocialMediaTable extends Migration
             $table->foreignId('company_id');
             $table->string('platform');
             $table->string('url');
-            $table->timestamps();
             // $table->foreignId('company_socialmedia');
         });
     }
