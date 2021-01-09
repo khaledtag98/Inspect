@@ -1,5 +1,5 @@
-<p align="center" style="color:rgb(225,50,50);font-size: 40px;font-weight: bold"> Inspect | CC414 </p>
-
+#                                                                              Inspect | CC414
+<br>
 <hr style="color:rgb(100,100,100);width:50%;">
 
 ### designed and developed By:
@@ -35,12 +35,12 @@
 ## ER Diagram:
 
 ![img_4.png](img_4.png)
-<p style="color:rgb(100,100,100);font-size: 30px;">_____</p>
+<hr style="color:rgb(100,100,100);width:50%;">
 
 ## Relational Mapping:
 
 ![img_6.png](img_6.png)
-<p style="color:rgb(100,100,100);font-size: 30px;">_____</p>
+<hr style="color:rgb(100,100,100);width:50%;">
 
 ## Registering as company:
 ![img_8.png](img_8.png)
