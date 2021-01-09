@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="35b58067-bb1f-4879-a2cd-262684e45e20" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EstateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EstateController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_04_180600_create_estates_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_04_180600_create_estates_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_04_183113_create_estate_photos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_04_183113_create_estate_photos_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/company-dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/company-dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/edit-estate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/edit-estate.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/edit-project.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/edit-project.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

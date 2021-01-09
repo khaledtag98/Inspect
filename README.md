@@ -1,61 +1,59 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<p align="center" style="color:rgb(225,50,50);font-size: 40px;font-weight: bold">Inspect | CC414</p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<p style="color:rgb(100,100,100);font-size: 30px;">_____</p>
 
-## About Laravel
+### designed and developed By:
+#### - Alshaimaa Hossam Mohamed - 17101571
+#### - Khaled Ahmed Tag – 16102031
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<p style="color:rgb(100,100,100);font-size: 30px;">_____</p>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+##Problem Definition:
+####This project aims to facilitate connection between real-estate companies and their clients. It provides a user-friendly web platform for the companies to display their residential or commercial properties. Also, real-estate clients can smoothly browse through the available properties from various companies and get a detailed view of each one of them. 
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+##Business Rules
+-	Each User is identified by an ID, name, Email, Password, a picture,  addresses, timestamps (created/updated), user remember token.
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+-	Companies are owned by users, each user can own only ONE company, and a company can be owned by ONE user. It isn’t mandatory that a user owns a company.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
+-	Companies are identified by an ID, name, a picture, timestamps (created/updated), unique slug, phone, address(es), description, picture, phone number(s).
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-### Premium Partners
+-	Companies can have multiple addresses mapping to multiple branches, each address contains Country, City and street.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
 
-## Contributing
+-	Each company works on multiple projects. A project is identified by an ID, picture, address, description, timestamps, name, and a unique slug.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## Code of Conduct
+-	Each project contains multiple estate properties. An estate is identified by an ID, picture(s), name, type, price, description, block, floor, and timestamps.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
+-	A company cannot exist without a user, a project surely cannot happen without a company working on it and an estate depends on the project that includes it.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+##ER Diagram:
+![img_4.png](img_4.png)
+<p style="color:rgb(100,100,100);font-size: 30px;">_____</p>
 
-## License
+##Relational Mapping:
+![img_6.png](img_6.png)
+<p style="color:rgb(100,100,100);font-size: 30px;">_____</p>
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+##Registering as company:
+![img_8.png](img_8.png)
+
+
+###After registration, data is added to the tables successfully. (Comapanies, Phones, Addresses)
+![img_10.png](img_10.png)
+<br>
+<br>
+<br>
+<hr style="color:rgb(100,100,100);">
+
+###There are many more features,feel free to download the project and explore them.
+
+<hr style="color:rgb(100,100,100);">
+<br>
+<br>
+<br>
