@@ -27,11 +27,7 @@ class EstateController extends Controller
         $project = DB::select('select * from projects where id = ? ', [$project_id]);
         $estate = DB::select('select * from estates where id = ? ', [$estate_id]);
         $estateModels = estate::hydrate($estate);
-        $picture1 = DB::select('select url from estate_photos where estate_id = ? and alt = ? ', [$estate_id], ['picture1']);
-        $picture2 = DB::select('select url from estate_photos where estate_id = ? and alt = ? ', [$estate_id], ['picture2']);
-        $picture3 = DB::select('select url from estate_photos where estate_id = ? and alt = ? ', [$estate_id], ['picture3']);
-        $picture4 = DB::select('select url from estate_photos where estate_id = ? and alt = ? ', [$estate_id], ['picture4']);
-        //dd($project_id);
+       
       return view('edit-estate', ['project_id'=> $project_id,
                                   'estate' => $estateModels[0],]);   
     }
@@ -55,31 +51,6 @@ class EstateController extends Controller
         
     ]);
     
-
-     $picture1 = EstatePhoto::create([
-        'project_id' => $request->id,
-         'estate_id' => $request->id,
-        'url' => $request->picture1,
-        'alt' => 'picture1'
-     ]);
-     $picture2= EstatePhoto::create([
-        'project_id' => $request->id,
-        'estate_id' => $request->id,
-       'url' => $request->picture2,
-       'alt' => 'picture2'
-    ]);
-    $picture3= EstatePhoto::create([
-        'project_id' => $request->id,
-        'estate_id' => $request->id,
-       'url' => $request->picture3,
-       'alt' => 'picture3',
-    ]);
-    $picture4= EstatePhoto::create([
-        'project_id' => $request->id,
-        'estate_id' => $request->id,
-       'url' => $request->picture4,
-       'alt' => 'picture4',
-    ]);
     
 }
 }
