@@ -1,12 +1,12 @@
 <p align="center" style="color:rgb(225,50,50);font-size: 40px;font-weight: bold"> Inspect | CC414 </p>
 
-<hr style="color:rgb(100,100,100);width:50%;">_____</hr>
+<hr style="color:rgb(100,100,100);width:50%;">
 
 ### designed and developed By:
 #### - Alshaimaa Hossam Mohamed - 17101571
 #### - Khaled Ahmed Tag – 16102031
 
-<hr style="color:rgb(100,100,100)">_____</hr>
+<hr style="color:rgb(100,100,100)">
 
 ## Problem Definition:
 #### This project aims to facilitate connection between real-estate companies and their clients. It provides a user-friendly web platform for the companies to display their residential or commercial properties. Also, real-estate clients can smoothly browse through the available properties from various companies and get a detailed view of each one of them. 
