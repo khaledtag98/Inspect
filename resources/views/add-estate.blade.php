@@ -52,30 +52,7 @@
                                        class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                             </div>
 
-                            <div class="col-span-6 sm:col-span-3 lg:col-span-4">
-                                <label for="picture1" class="block text-sm font-medium text-gray-700">Picture URL</label>
-                                <input type="text" name="picture1" id="picture1"
-                                       autocomplete="picture1"
-                                       class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                            </div>
-                            <div class="col-span-6 sm:col-span-3 lg:col-span-4">
-                                <label for="picture2" class="block text-sm font-medium text-gray-700">Picture URL</label>
-                                <input type="text" name="picture2" id="picture2"
-                                       autocomplete="picture2"
-                                       class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                            </div>
-                            <div class="col-span-6 sm:col-span-3 lg:col-span-4">
-                                <label for="picture3" class="block text-sm font-medium text-gray-700">Picture URL</label>
-                                <input type="text" name="picture3" id="picture3"
-                                       autocomplete="picture3"
-                                       class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                            </div>
-                            <div class="col-span-6 sm:col-span-3 lg:col-span-4">
-                                <label for="picture4" class="block text-sm font-medium text-gray-700">Picture URL</label>
-                                <input type="text" name="picture4" id="picture4"
-                                       autocomplete="picture4"
-                                       class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                            </div>
+                            
                             
                         </div>
                     </div>
