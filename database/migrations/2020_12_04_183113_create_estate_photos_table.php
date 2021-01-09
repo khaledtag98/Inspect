@@ -17,6 +17,7 @@ class CreateEstatePhotosTable extends Migration
             $table->id();
             $table->foreignId('estate_id');
             $table->string('url');
+            $table->string('alt');
             $table->timestamps();
         });
     }

@@ -24,6 +24,15 @@ use App\Models\Company;
 Route::get('/', function () {return view('landing');})->name('home');
 Route::get('/profile', function () {return view('profile');})->name('profile');
 Route::get('/all-projects', function () {return view('all-projects');})->name('projects');
+// Route::get('/add-estate/{id}', function () {return view('add-estate');})->name('estates');
+Route::get('edit-project/{pid}/{eid}',[EstateController::class,'delete']);
+Route::get('edit-estate/{pid}/{eid}',[EstateController::class,'edit']);
+Route::get('edit-estate-info/{pid}/{eid}',[EstateController::class,'update']);
+
+Route::get('add-estate/{id}', function($id){
+    
+    return view('add-estate', ['project_id' => $id]);});
+Route::get('/save-estate', [EstateController::class, 'create']); 
 
 Route::get('/all-companies',
     function () {
@@ -40,6 +49,7 @@ Route::get('/results',
         return view('search-results')->with(['companies'=>$companies])->with(['projects'=> $projects])->with(['estates'=> $estates]);
 
     });
+    
 
 Route::get('/send-request',  [MailController::class, 'send']);
 

@@ -6,79 +6,16 @@
 @endsection
 
 @section('content')
-    <div class="my-20 container mx-auto">
+    <div class="container mx-auto my-20">
         <div class="">
             <div class="md:grid md:grid-cols-3 md:gap-6">
                 <div class="md:col-span-1">
                     <div class="px-4 sm:px-0">
                         <h3 class="text-lg font-medium leading-6 text-gray-900">Project Information</h3>
-                        <p class="mt-1 text-sm text-gray-600">
-                            This information will be displayed publicly so be careful what you share.
-                        </p>
                     </div>
                 </div>
                 <div class="mt-5 md:mt-0 md:col-span-2">
-                    <form method="POST" action="{{route('editProject')}}">
-                        @csrf
-                        <div class="shadow sm:rounded-md sm:overflow-hidden">
-                            <div class="px-4 py-5 bg-white space-y-6 sm:p-6">
-                                <input type="hidden" name="id" value="{{$project->id}}">
-                                <div class="grid grid-cols-3 gap-6">
-                                    <div class="col-span-3 sm:col-span-2">
-                                        <label class="text-md font-semibold text-gray-800">Project Name</label>
-                                        <input type="name" id="name" name="name" value="{{$project->name}}" placeholder="{{$project->name}}"
-                                               class="w-full px-4 py-2 my-2 mr-4 transition-all duration-300 ease-in-out text-base text-blue-700 bg-gray-200 border outline-none rounded-lg focus:border-gray-500 focus:bg-white focus:ring-0">
-                                    </div>
-                                </div>
-                                <div class="grid grid-cols-3 gap-6">
-                                    <div class="col-span-3 sm:col-span-2">
-                                        <label class="text-md font-semibold text-gray-800">Project Address</label>
-                                        <input type="address" id="address" name="address" value="{{$project->address}}" placeholder="{{$project->address}}"
-                                               class="w-full px-4 py-2 my-2 mr-4 transition-all duration-300 ease-in-out text-base text-blue-700 bg-gray-200 border outline-none rounded-lg focus:border-gray-500 focus:bg-white focus:ring-0">
-                                    </div>
-                                </div>
-                                <div class="grid grid-cols-3">
-                                    <div class="col-span-3 sm:col-span-2">
-                                        <label for="about" class="block text-md font-semibold text-gray-800">
-                                            Description
-                                        </label>
-                                        <div class="mt-1">
-                                    <textarea id="description" name="description" rows="5" value="{{$project->description}}"
-                                              class="border my-2  bg-gray-200 transition-all duration-300 ease-in-out p-2  focus:bg-white outline-none mt-1 block w-full focus:border-gray-500 sm:text-sm rounded-md"
-                                              placeholder="{{$project->description}}"></textarea>
-                                        </div>
-                                        {{--                                    <p class="mt-2 text-sm text-gray-500">--}}
-                                        {{--                                        Brief description for your profile. URLs are hyperlinked.--}}
-                                        {{--                                    </p>--}}
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <label for="picture" class="block text-sm font-medium text-gray-700">
-                                        Photo
-                                    </label>
-                                    <div class="mt-2 flex items-center">
-                                     <img class="h-12 w-12 mr-3 rounded-full" src="{{$project->picture}}">
-                                        <input type="picture" id="picture" name="picture" value="{{$project->picture}}"
-                                               placeholder="{{$project->picture}}"
-                                               class="w-full px-4 py-2 my-2 mr-4 transition-all duration-300 ease-in-out text-base text-blue-700 bg-gray-200 border outline-none rounded-lg focus:border-gray-500 focus:bg-white focus:ring-0">
-                                    </div>
-                                </div>
-                                <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
-                                    <button type="submit"
-                                            class="inline-flex justify-center mr-3 py-2 px-8 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                                        Save
-                                    </button>
-                                    <a
-                                        href="/dashboard"
-                                        class="inline-flex justify-center  py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                                        cancel
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </form>
+                   
                 </div>
             </div>
         </div>
@@ -92,92 +29,123 @@
         <div class="mt-10 sm:mt-0">
             <div class="md:grid md:grid-cols-3 md:gap-6">
                 <div class="md:col-span-1">
+                    
                     <div class="px-4 sm:px-0">
-                        <h3 class="text-lg font-medium leading-6 text-gray-900">Personal Information</h3>
-                        <p class="mt-1 text-sm text-gray-600">
-                            Use a permanent address where you can receive mail.
-                        </p>
+                       
                     </div>
                 </div>
                 <div class="mt-5 md:mt-0 md:col-span-2">
-                    <form action="#" method="POST">
-                        <div class="shadow overflow-hidden sm:rounded-md">
-                            <div class="px-4 py-5 bg-white sm:p-6">
-                                <div class="grid grid-cols-6 gap-6">
-                                    <div class="col-span-6 sm:col-span-3">
-                                        <label for="first_name" class="block text-sm font-medium text-gray-700">First
-                                            name</label>
-                                        <input type="text" name="first_name" id="first_name" autocomplete="given-name"
-                                               class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-                                    </div>
-
-                                    <div class="col-span-6 sm:col-span-3">
-                                        <label for="last_name" class="block text-sm font-medium text-gray-700">Last
-                                            name</label>
-                                        <input type="text" name="last_name" id="last_name" autocomplete="family-name"
-                                               class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-                                    </div>
-
-                                    <div class="col-span-6 sm:col-span-4">
-                                        <label for="email_address" class="block text-sm font-medium text-gray-700">Email
-                                            address</label>
-                                        <input type="text" name="email_address" id="email_address" autocomplete="email"
-                                               class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-                                    </div>
-
-                                    <div class="col-span-6 sm:col-span-3">
-                                        <label for="country" class="block text-sm font-medium text-gray-700">Country /
-                                            Region</label>
-                                        <select id="country" name="country" autocomplete="country"
-                                                class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                                            <option>United States</option>
-                                            <option>Canada</option>
-                                            <option>Mexico</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="col-span-6">
-                                        <label for="street_address" class="block text-sm font-medium text-gray-700">Street
-                                            address</label>
-                                        <input type="text" name="street_address" id="street_address"
-                                               autocomplete="street-address"
-                                               class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-                                    </div>
-
-                                    <div class="col-span-6 sm:col-span-6 lg:col-span-2">
-                                        <label for="city" class="block text-sm font-medium text-gray-700">City</label>
-                                        <input type="text" name="city" id="city"
-                                               class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-                                    </div>
-
-                                    <div class="col-span-6 sm:col-span-3 lg:col-span-2">
-                                        <label for="state" class="block text-sm font-medium text-gray-700">State /
-                                            Province</label>
-                                        <input type="text" name="state" id="state"
-                                               class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-                                    </div>
-
-                                    <div class="col-span-6 sm:col-span-3 lg:col-span-2">
-                                        <label for="postal_code" class="block text-sm font-medium text-gray-700">ZIP /
-                                            Postal</label>
-                                        <input type="text" name="postal_code" id="postal_code"
-                                               autocomplete="postal-code"
-                                               class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                    <form method="POST" action="{{route('editProject')}}">
+                        @csrf
+                        <div class="shadow sm:rounded-md sm:overflow-hidden">
+                            <div class="px-4 py-5 space-y-6 bg-white sm:p-6">
+                                <input type="hidden" name="id" value="">
+                                <div class="grid grid-cols-3 gap-6">
+                                    <div class="col-span-3 sm:col-span-2">
+                                        <label class="font-semibold text-gray-800 text-md">Project Name</label>
+                                        <input type="name" id="name" name="name" value="" placeholder=""
+                                               class="w-full px-4 py-2 my-2 mr-4 text-base text-blue-700 transition-all duration-300 ease-in-out bg-gray-200 border rounded-lg outline-none focus:border-gray-500 focus:bg-white focus:ring-0">
                                     </div>
                                 </div>
+                                <div class="grid grid-cols-3 gap-6">
+                                    <div class="col-span-3 sm:col-span-2">
+                                        <label class="font-semibold text-gray-800 text-md">Project Address</label>
+                                        <input type="address" id="address" name="address" value="" placeholder=""
+                                               class="w-full px-4 py-2 my-2 mr-4 text-base text-blue-700 transition-all duration-300 ease-in-out bg-gray-200 border rounded-lg outline-none focus:border-gray-500 focus:bg-white focus:ring-0">
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-3">
+                                    <div class="col-span-3 sm:col-span-2">
+                                        <label for="about" class="block font-semibold text-gray-800 text-md">
+                                            Description
+                                        </label>
+                                        <div class="mt-1">
+                                    <textarea id="description" name="description" rows="5" value=""
+                                              class="block w-full p-2 my-2 mt-1 transition-all duration-300 ease-in-out bg-gray-200 border rounded-md outline-none focus:bg-white focus:border-gray-500 sm:text-sm"
+                                              placeholder=""></textarea>
+                                        </div>
+                                            <p class="mt-2 text-sm text-gray-500">
+                                                Brief description for your profile. URLs are hyperlinked.
+                                            </p>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="picture" class="block text-sm font-medium text-gray-700">
+                                        Photo
+                                    </label>
+                                    <div class="flex items-center mt-2">
+                                     <img class="w-12 h-12 mr-3 rounded-full" src="">
+                                        <input type="picture" id="picture" name="picture" value=""
+                                               placeholder=""
+                                               class="w-full px-4 py-2 my-2 mr-4 text-base text-blue-700 transition-all duration-300 ease-in-out bg-gray-200 border rounded-lg outline-none focus:border-gray-500 focus:bg-white focus:ring-0">
+                                    </div>
+                                </div>
+                                <div class="px-4 py-3 text-right bg-gray-50 sm:px-6">
+                                    <button type="submit"
+                                            class="inline-flex justify-center px-8 py-2 mr-3 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                        Save
+                                    </button>
+                                    <a
+                                        href="/dashboard"
+                                        class="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-red-600 border border-transparent rounded-md shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                        cancel
+                                    </a>
+                                </div>
+                              
                             </div>
-                            <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
-                                <button type="submit"
-                                        class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                                    Save
-                                </button>
-                            </div>
+                            
+
                         </div>
                     </form>
+                    
                 </div>
+                
             </div>
         </div>
-
+        <div class="">
+            <div class="flex grid w-full mt-6 mb-6 justify-items-stretch">
+                <h1 class="text-3xl justify-self-start">Current Properties</h1>
+                <div class="px-4 sm:px-0 justify-self-end">
+                    <a href="/add-estate/{{$project->id}}" class="px-3 py-2 my-2 bg-button1">Add a new property</a>
+                </div>
+            </div>
+            <div class="grid grid-cols-12 gap-2 py-2 font-semibold text-gray-500 uppercase bg-gray-200 ">
+                <div class="col-span-3">Property name</div>
+                <div class="col-span-2">Price</div>
+                <div class="col-span-2">Block</div>
+                <div class="col-span-2">Floor</div>
+                <div class="col-span-2">Created at</div>
+            </div>
+ 
+        @foreach ($estate as $estates)
+         
+                    <div class="grid grid-cols-12 gap-2 py-2 text-gray-700 bg-white border-b">
+                        <div class="text-center truncate"></div>
+                        <div class="col-span-2 truncate">
+                            <img class="inline w-8 h-8 mr-3 rounded-full"
+                                 src="" alt="">
+                            {{$estates->name}}
+                        </div>
+                        <div class="inline col-span-2 truncate">{{$estates->price}}</div>
+                        <div class="inline col-span-2 truncate">{{$estates->block}}</div>
+                        <div class="inline col-span-2 truncate">{{$estates->floor}}</div>
+                        <div class="col-span-1 truncate ">{{$estates->created_at}}</div>
+                        <div >
+                            <a href="/edit-estate/{{$project->id}}/{{$estates->id}}" class="text-blue-700 cursor-pointer hover:underline">
+                                edit
+                            </a>
+                        </div>
+                        <div class="">
+        
+                            <a href="/edit-project/{{$project->id}}/{{$estates->id}}" class="text-blue-700 cursor-pointer hover:underline">
+                                Delete
+                            </a>
+                        </div>
+                    </div>
+                    @endforeach
+             
+                </div>
     </div>
 
 @endsection

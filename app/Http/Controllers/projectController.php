@@ -51,7 +51,9 @@ class projectController extends Controller
     }
     public function showdata($id){
     $project = \App\Models\Project::findOrFail($id);
-    return view('edit-project',['project'=>$project]);
+    $estate = DB::select("select * from estates where project_id =?",[$project->id]);
+    return view('edit-project',['project'=>$project,
+                                'estate' =>$estate]);
 }
     public function update(Request $request)
     {

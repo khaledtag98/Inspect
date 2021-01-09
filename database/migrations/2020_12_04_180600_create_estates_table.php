@@ -21,8 +21,6 @@ class CreateEstatesTable extends Migration
             $table->text('description');
             $table->string('block');
             $table->string('floor');
-            $table->string('picture');
-            $table->boolean('available');
             $table->timestamps();
             $table->bigInteger('project_id')->unsigned();
             $table->foreign('project_id')->references('id')->on('projects')->onDelete('cascade');
