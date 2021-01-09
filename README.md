@@ -32,11 +32,13 @@
 
 -	A company cannot exist without a user, a project surely cannot happen without a company working on it and an estate depends on the project that includes it.
 
-##ER Diagram:
+## ER Diagram:
+
 ![img_4.png](img_4.png)
 <p style="color:rgb(100,100,100);font-size: 30px;">_____</p>
 
-##Relational Mapping:
+## Relational Mapping:
+
 ![img_6.png](img_6.png)
 <p style="color:rgb(100,100,100);font-size: 30px;">_____</p>
 
