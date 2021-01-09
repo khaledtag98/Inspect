@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="35b58067-bb1f-4879-a2cd-262684e45e20" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_03_203113_create_addresses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_03_203113_create_addresses_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_04_174436_create_company_phones_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_04_174436_create_company_phones_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +207,11 @@
       <workItem from="1609940639535" duration="12639000" />
       <workItem from="1609961691138" duration="30995000" />
       <workItem from="1610127541554" duration="274000" />
-      <workItem from="1610133316266" duration="2369000" />
+      <workItem from="1610133316266" duration="4118000" />
+      <workItem from="1610192955758" duration="943000" />
+      <workItem from="1610197771206" duration="120000" />
+      <workItem from="1610198348916" duration="3000" />
+      <workItem from="1610206904286" duration="1645000" />
     </task>
     <servers />
   </component>
@@ -268,7 +270,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/edit-project.blade.php</url>
-          <line>181</line>
+          <line>149</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
