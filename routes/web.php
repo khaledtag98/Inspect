@@ -28,16 +28,16 @@ Route::get('/all-projects', function () {return view('all-projects');})->name('p
 Route::get('edit-project/{pid}/{eid}',[EstateController::class,'delete']);
 Route::get('edit-estate/{pid}/{eid}',[EstateController::class,'edit']);
 Route::get('edit-estate-info/{pid}/{eid}',[EstateController::class,'update']);
-
+Route::get('/delete/estate-photo/{photoid}/{eid}/{pid}',[EstateController::class,'deletePhoto']);
 Route::get('add-estate/{id}', function($id){
-    
+
     return view('add-estate', ['project_id' => $id]);});
-Route::get('/save-estate', [EstateController::class, 'create']); 
+Route::get('/save-estate', [EstateController::class, 'create']);
 
 Route::get('/all-companies',
     function () {
         $companies = \App\Models\Company::all() ;
-        
+
         return view('all-companies' , ['companies' => $companies]);
     })->name('companies');
 
@@ -49,7 +49,7 @@ Route::get('/results',
         return view('search-results')->with(['companies'=>$companies])->with(['projects'=> $projects])->with(['estates'=> $estates]);
 
     });
-    
+
 
 Route::get('/send-request',  [MailController::class, 'send']);
 

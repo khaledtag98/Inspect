@@ -15,8 +15,8 @@ class CreateEstatePhotosTable extends Migration
     {
         Schema::create('estate_photos', function (Blueprint $table) {
             $table->id();
-            $table->string('url');
-            $table->string('alt');
+            $table->string('url')->nullable();
+            $table->string('alt')->nullable();
             $table->timestamps();
             $table->bigInteger('project_id')->unsigned();
             $table->bigInteger('estate_id')->unsigned();

@@ -95,7 +95,7 @@
                                 {{$project->name}}
                             </div>
                             <div class="col-span-2 inline truncate">{{$project->address}}</div>
-                            <div class="truncate col-span-2 ">32</div>
+                            <div class="truncate col-span-2 ">{{$project->estates->count()}}</div>
                             <div class="truncate col-span-2 ">{{$project->created_at->format('M, d Y')}}</div>
                             <div >
                                 <a href="{{"edit-project/".$project->id}}" class="text-blue-700 hover:underline cursor-pointer">

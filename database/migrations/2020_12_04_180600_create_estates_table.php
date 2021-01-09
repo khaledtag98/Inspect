@@ -16,11 +16,11 @@ class CreateEstatesTable extends Migration
         Schema::create('estates', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('type');
-            $table->string('price');
-            $table->text('description');
-            $table->string('block');
-            $table->string('floor');
+            $table->string('type')->nullable();
+            $table->string('price')->nullable();
+            $table->text('description')->nullable();
+            $table->string('block')->nullable();
+            $table->string('floor')->nullable();
             $table->timestamps();
             $table->bigInteger('project_id')->unsigned();
             $table->foreign('project_id')->references('id')->on('projects')->onDelete('cascade');
