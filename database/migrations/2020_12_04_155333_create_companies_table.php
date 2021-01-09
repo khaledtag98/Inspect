@@ -21,7 +21,7 @@ class CreateCompaniesTable extends Migration
             $table->text('description')->nullable();
             $table->string('picture')->nullable();
             $table->timestamps();
-            $table->bigInteger('user_id')->unsigned();
+            $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }

@@ -21,8 +21,10 @@ class CreateProjectsTable extends Migration
             $table->text('address');
             $table->string('picture')->nullable();
             $table->timestamps();
-            $table->bigInteger('company_id')->unsigned();
+            $table->bigInteger('company_id')->unsigned(); 
             $table->foreign('company_id')->references('id')->on('companies')->onDelete('cascade');
+            $table->bigInteger('user_id')->unsigned();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
 
         });
     }

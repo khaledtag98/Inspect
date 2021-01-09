@@ -59,11 +59,13 @@ class RegisteredUserController extends Controller
                              'description' => $request->description]);
             $address = Address::create([
                             'company_id' => $company->id,
+                            'user_id' => $user->id,
                              'country'=> $request->country,
                              'city'=> $request->city,
                              'street'=> $request->street,
             ]);
             $phone = CompanyPhone::create([
+                'user_id' => $user->id,
                 'company_id' => $company->id,
                 'phone'=> $request->phone,
             ]);

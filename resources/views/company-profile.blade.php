@@ -25,7 +25,9 @@
             <p id='c_address' class='text-l'>{{$address->street}}, {{$address->city}}, {{$address->country}}</p>
             @endforeach
             <h1 class='mt-6 mb-3 font-bold text-l'>Phone Number(s)</h1>
-            <p id='c_phone' class='text-l'>{{$phones->phone}}</p>
+            @foreach($company->company_phones as $phone)
+            <p id='c_address' class='text-l'>{{$phone->phone}}</p>
+            @endforeach
             
 
             <div class='flex my-10'>

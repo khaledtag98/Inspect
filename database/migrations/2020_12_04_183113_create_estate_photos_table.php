@@ -15,10 +15,13 @@ class CreateEstatePhotosTable extends Migration
     {
         Schema::create('estate_photos', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('estate_id');
             $table->string('url');
             $table->string('alt');
             $table->timestamps();
+            $table->bigInteger('project_id')->unsigned();
+            $table->bigInteger('estate_id')->unsigned();
+            $table->foreign('project_id')->references('id')->on('projects')->onDelete('cascade');
+            $table->foreign('estate_id')->references('id')->on('estates')->onDelete('cascade');
         });
     }
 

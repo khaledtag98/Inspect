@@ -57,21 +57,25 @@ class EstateController extends Controller
     
 
      $picture1 = EstatePhoto::create([
+        'project_id' => $request->id,
          'estate_id' => $request->id,
         'url' => $request->picture1,
         'alt' => 'picture1'
      ]);
      $picture2= EstatePhoto::create([
+        'project_id' => $request->id,
         'estate_id' => $request->id,
        'url' => $request->picture2,
        'alt' => 'picture2'
     ]);
     $picture3= EstatePhoto::create([
+        'project_id' => $request->id,
         'estate_id' => $request->id,
        'url' => $request->picture3,
        'alt' => 'picture3',
     ]);
     $picture4= EstatePhoto::create([
+        'project_id' => $request->id,
         'estate_id' => $request->id,
        'url' => $request->picture4,
        'alt' => 'picture4',
