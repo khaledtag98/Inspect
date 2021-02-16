@@ -1,10 +1,10 @@
-#                                                                              Inspect | CC414
+#                                                                              Inspect
 <br>
 <hr style="color:rgb(100,100,100);width:50%;">
 
 ### designed and developed By:
-#### - Alshaimaa Hossam Mohamed - 17101571
-#### - Khaled Ahmed Tag – 16102031
+#### - Alshaimaa Hossam Mohamed
+#### - Khaled Ahmed Tag
 
 <hr style="color:rgb(100,100,100)">
 
